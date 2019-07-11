@@ -69,7 +69,7 @@ module.exports = "<footer class=\"footer\">\r\n  <div class=\"container\">\r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<nav id=\"navbar1\" class=\"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark\">\r\n  <div class=\"container\">\r\n      <a id=\"imgLogoReducido\" class=\"navbar-brand logo text-uppercase\" routerLink=\"/\">\r\n        <img src=\"../../../../assets/LogoReducidoMenu.png\" >  \r\n      </a>\r\n      <button id=\"menu_button\" class=\"navbar-toggler\" (click)=\"toggleMenu()\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <i class=\"mdi mdi-menu\"></i>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\" scrollSpy>\r\n          <ul class=\"navbar-nav navbar-center\" id=\"mySidenav\">\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_home\"  [ngx-scroll-to]=\"'#home'\" class=\"nav-link\" >PRESTACLIC</a>\r\n              </li>\r\n              <li class=\"nav-item\"  >\r\n                  <a data=\"id_services\"  [ngx-scroll-to]=\"'#services'\" class=\"nav-link\" >PLANES</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_features\"  [ngx-scroll-to]=\"'#features'\"  class=\"nav-link\" >NOSOTROS</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_pricing\" [ngx-scroll-to]=\"'#pricing'\" class=\"nav-link\">AYUDA</a>\r\n              </li>\r\n             \r\n            \r\n          </ul>\r\n          <div class=\"nav-button ml-auto\">\r\n              <ul class=\"nav navbar-nav navbar-right\">\r\n                  <li>\r\n                      <button  (click)=\"openRegisterComponent()\" type=\"button\" class=\"btn btn-second  btn-rounded\">REGISTRO</button>\r\n                      <button type=\"button\" class=\"btn btn-custom  btn-rounded\">INICIAR SESIÓN</button>\r\n                    </li>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</nav>\r\n<br>\r\n<br>\r\n<br>"
+module.exports = "\r\n<nav id=\"navbar1\" class=\"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark\">\r\n  <div class=\"container\">\r\n      <a id=\"imgLogoReducido\" class=\"navbar-brand logo text-uppercase\" routerLink=\"/\">\r\n        <img src=\"../../../../assets/LogoReducidoMenu.png\" >  \r\n      </a>\r\n      <button id=\"menu_button\" class=\"navbar-toggler\" (click)=\"toggleMenu()\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <i class=\"mdi mdi-menu\"></i>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\" scrollSpy>\r\n          <ul class=\"navbar-nav navbar-center\" id=\"mySidenav\">\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_home\"  [ngx-scroll-to]=\"'#home'\" class=\"nav-link\" >PRESTACLIC</a>\r\n              </li>\r\n              <li class=\"nav-item\"  >\r\n                  <a data=\"id_services\"  [ngx-scroll-to]=\"'#services'\" class=\"nav-link\" >PLANES</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_features\"  [ngx-scroll-to]=\"'#features'\"  class=\"nav-link\" >NOSOTROS</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_pricing\" [ngx-scroll-to]=\"'#pricing'\" class=\"nav-link\">AYUDA</a>\r\n              </li>\r\n             \r\n            \r\n          </ul>\r\n          <div class=\"nav-button ml-auto\">\r\n              <ul class=\"nav navbar-nav navbar-right\">\r\n                  <li>\r\n                      <button  (click)=\"openRegisterComponent()\" type=\"button\" class=\"btn btn-second  btn-rounded\">REGISTRATE</button>\r\n                      <button type=\"button\" class=\"btn btn-custom  btn-rounded\">INICIAR SESIÓN</button>\r\n                    </li>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</nav>\r\n<br>\r\n<br>\r\n<br>"
 
 /***/ }),
 
@@ -91,7 +91,7 @@ module.exports = "<div id=\"theme_id\" class=\"\">\r\n    <app-header></app-head
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"u-bg-overlay g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after g-py-100\"\r\n    style=\"background-image: url(../../../../../assets/BackgroundFormularioRegistro.png);\">\r\n    <div class=\"container u-bg-overlay__inner\">\r\n        <img class=\"imgTit\" src=\"../../../../../assets/BePartnersLogo.png\" style=\"height: 110px;\">\r\n        <br>\r\n        <br>\r\n        <h1>Registra tu empresa gratis</h1>\r\n        <h3>y haz parte de nuestra comunidad</h3>\r\n        <br>\r\n\r\n        <div class=\"row justify-content-center align-items-center no-gutters\">\r\n\r\n            <aw-wizard #wizard [navBarLayout]=\"'large-empty-symbols'\">\r\n                <aw-wizard-step stepTitle=\"INFO USUARIO Y EMPRESA\">\r\n                    <ng-template awWizardStepSymbol><i class=\"fa fa-user\"></i></ng-template>\r\n                    <div class=\"container\">\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"custom-form mt-4 pt-4\">\r\n                                    <div id=\"message\"></div>\r\n                                    <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\"\r\n                                        name=\"contact-form\" id=\"contact-form\" style=\"padding: 20px 0px 0px 20px;\"\r\n                                        novalidate [formGroup]=\"fg\">\r\n                                        <div class=\"content\">\r\n                                            <div class=\"row\">\r\n                                                <img src=\"../../../../../assets/Iconos/Info Usuario Perfil.svg\">\r\n                                                <div class=\"col-lg-11\">\r\n                                                    <h2 class=\"titles\">Información del Usuario</h2>\r\n\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"nombre\">NOMBRE</label>\r\n                                                        <input matInput formControlName=\"Name\" type=\"text\"\r\n                                                            class=\"form-control\" id=\"nombre\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"apellido\">APELLIDO</label>\r\n                                                        <input matInput formControlName=\"LastName\" id=\"apellido\"\r\n                                                            type=\"apellido\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n\r\n                                                        <label for=\"exampleFormControlSelect1\">TIPO DE DOCUMENTO</label>\r\n                                                        <select class=\"form-control\" id=\"exampleFormControlSelect1\">\r\n                                                            <option>Cedula de ciudadanía</option>\r\n                                                            <option>Cedula de extranjería</option>\r\n                                                            <option>NIT </option>\r\n                                                        </select>\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"numDoc\">NÚMERO DE DOCUMENTO</label>\r\n                                                        <input id=\"numDoc\" matInput formControlName=\"identification\"\r\n                                                            type=\"numDoc\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"celular\">CELULAR</label>\r\n                                                        <input matInput formControlName=\"Phone\" id=\"celular\"\r\n                                                            type=\"celular\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"correo\">CORREO ELECTRÓNICO</label>\r\n                                                        <input matInput formControlName=\"Email\" type=\"text\"\r\n                                                            class=\"form-control\" id=\"correo\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n\r\n                                                <div class=\"col-lg-12\">\r\n\r\n                                                    <div class=\"form-check\">\r\n                                                        <input type=\"checkbox\" class=\"form-check-input\"\r\n                                                            id=\"exampleCheck1\">\r\n                                                        <label class=\"form-check-label\" for=\"exampleCheck1\">He leído y\r\n                                                            acepto las condiciones de Representante Legal</label>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <br>\r\n                                            <br>\r\n\r\n                                            <div class=\"row\">\r\n                                                <img src=\"../../../../../assets/Iconos/Info Empresa.svg\">\r\n                                                <div class=\"col-lg-10\">\r\n                                                    <h2 class=\"titles\">Información de la Empresa</h2>\r\n\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n\r\n                                            <div class=\"row\">\r\n\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <label for=\"exampleFormControlSelect1\">TIPO DE\r\n                                                        IDENTIFICACIÓN</label>\r\n                                                    <select class=\"form-control\" id=\"exampleFormControlSelect1\">\r\n                                                        <option>Cedula de ciudadanía</option>\r\n                                                        <option>Cedula de extranjería</option>\r\n                                                        <option>NIT </option>\r\n                                                    </select>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresaNumId\">NÚMERO DE IDENTIFICACIÓN</label>\r\n                                                        <input matInput formControlName=\"Nit\" id=\"EmpresaNumId\"\r\n                                                            type=\"EmpresaNumId\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresaRazon\">RAZÓN SOCIAL</label>\r\n                                                        <input matInput formControlName=\"businessName\" type=\"text\"\r\n                                                            class=\"form-control\" id=\"EmpresaRazon\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresanumDoc\">EMAIL FACTURACIÓN</label>\r\n                                                        <input matInput formControlName=\"EmailFact\" id=\"EmpresanumDoc\"\r\n                                                            type=\"EmpresanumDoc\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresaDireccion\">*DIRECCIÓN CORRESPONDENCIA</label>\r\n                                                        <input matInput formControlName=\"Address\" id=\"EmpresaDireccion\"\r\n                                                            type=\"EmpresaDireccion\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"ciudad\">CIUDAD</label>\r\n                                                        <ng-template #rt let-r=\"result\" let-t=\"term\">\r\n                                                            <ngb-highlight [result]=\"r.nomHijo\" [term]=\"t\">\r\n                                                            </ngb-highlight>\r\n                                                        </ng-template>\r\n                                                        <input matInput formControlName=\"Citie\" type=\"text\"\r\n                                                            [ngbTypeahead]=\"search\" [resultTemplate]=\"rt\"\r\n                                                            [inputFormatter]=\"formatter\" class=\"form-control\"\r\n                                                            id=\"ciudad\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <h4>Registrándome, acepto los <a href=\"{{url}}\">Términos y\r\n                                                            Condiciones</a> y la <a href=\"{{url}}\">Política de\r\n                                                            privacidad</a> de BePartners - DataCrédito Experian</h4>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"wrapper\">\r\n                                                        <button class=\"btn btn-rounded\"\r\n                                                            [disabled]=\"fg.invalid\"\r\n                                                            (click)=\"createUser() \">REGISTRARME</button>\r\n\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <h4>¿Ya tienes una cuenta? </h4>\r\n                                                    <a href=\"{{url}}\">\r\n                                                        <h4>INICIA SESIÓN</h4>\r\n                                                    </a>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <br>\r\n                                            <br>\r\n                                        </div>\r\n                                    </form>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </aw-wizard-step>\r\n                <aw-wizard-step stepTitle=\"CREA TU CONTRASEÑA\">\r\n                    <ng-template awWizardStepSymbol><i class=\"fa fa-lock\"></i></ng-template>\r\n                    <div class=\"container\">\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"custom-form mt-4 pt-4\">\r\n                                    <div id=\"message\"></div>\r\n                                    <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\"\r\n                                        name=\"contact-form\" id=\"contact-form\" style=\"padding: 20px 0px 0px 20px;\">\r\n                                        <div class=\"content\">\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <div class=\"row\">\r\n                                                            <div class=\"col-lg-1\"></div>\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <label for=\"username\">USUARIO</label>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                        <div class=\"row\">\r\n                                                            <img\r\n                                                                src=\"../../../../../assets/Iconos/Info Usuario Perfil.svg\">\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <input type=\"text\" id=\"username\" [(ngModel)]=\"username\"\r\n                                                                    name=\"username\" class=\"form-control\" required>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <div class=\"row\">\r\n                                                            <div class=\"col-lg-1\"></div>\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <label for=\"password\">CONTRASEÑA</label>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                        <div class=\"row\">\r\n                                                            <img src=\"../../../../../assets/Iconos/Contraseña.svg\">\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <input type=\"password\" id=\"password\"\r\n                                                                    [(ngModel)]=\"password\" name=\"password\"\r\n                                                                    class=\"form-control\" required>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <div class=\"row\">\r\n                                                            <div class=\"col-lg-1\"></div>\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <label for=\"passwordConf\">CONFIRMA LA CONTRASEÑA</label>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                        <div class=\"row\">\r\n                                                            <img src=\"../../../../../assets/Iconos/Contraseña.svg\">\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <input type=\"password\" id=\"passwordConf\"\r\n                                                                    [(ngModel)]=\"passwordConf\" name=\"passwordConf\"\r\n                                                                    class=\"form-control\" required>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br />\r\n                                            <div class=\"row\">\r\n                                                    <div class=\"col-lg-12\">\r\n                                                        <div class=\"wrapper\">\r\n                                                            <button class=\"btn btn-rounded\"\r\n                                                                [disabled]=\"fg.invalid\"\r\n                                                                (click)=\"confirmarContrasena() \">CONFIRMAR</button>\r\n    \r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            <br />\r\n                                            <br>\r\n                                            <br>\r\n                                            <br>\r\n\r\n                                        </div>\r\n                                    </form>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <!--                     <button type=\"button\" awPreviousStep>Go to previous step </button> -->\r\n                    <!--                     <button type=\"button\" awNextStep>Go to next step </button> -->\r\n                </aw-wizard-step>\r\n                <aw-wizard-step stepTitle=\"INGRESA A TU PERFIL\">\r\n                    <ng-template awWizardStepSymbol><i class=\"fa fa-check\"></i></ng-template>\r\n                    <div class=\"container\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-lg-12\">\r\n                                    <div class=\"custom-form mt-4 pt-4\">\r\n                                        <div id=\"message\"></div>\r\n                                        <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\"\r\n                                            name=\"contact-form\" id=\"contact-form\" style=\"padding: 20px 0px 0px 20px;\">\r\n                                            <div class=\"content\">\r\n                                                <br>\r\n                                                <div class=\"row\">\r\n                                                    <div class=\"col-lg-12\">\r\n                                                        <div class=\"form-group mt-2\">\r\n                                                            <div class=\"row\">\r\n                                                                <div class=\"col-lg-1\"></div>\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <label for=\"username\">USUARIO</label>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                            <div class=\"row\">\r\n                                                                <img\r\n                                                                    src=\"../../../../../assets/Iconos/Info Usuario Perfil.svg\">\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <input type=\"text\" id=\"username\" [(ngModel)]=\"username\"\r\n                                                                        name=\"username\" class=\"form-control\" required>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"row\">\r\n                                                    <div class=\"col-lg-12\">\r\n                                                        <div class=\"form-group mt-2\">\r\n                                                            <div class=\"row\">\r\n                                                                <div class=\"col-lg-1\"></div>\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <label for=\"password\">CONTRASEÑA</label>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                            <div class=\"row\">\r\n                                                                <img src=\"../../../../../assets/Iconos/Contraseña.svg\">\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <input type=\"password\" id=\"password\"\r\n                                                                        [(ngModel)]=\"password\" name=\"password\"\r\n                                                                        class=\"form-control\" required>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                                \r\n                                                <br />\r\n                                                <h4>¿Olvidaste tu <a href=\"\">contraseña</a>?</h4>\r\n                                                <div class=\"row\">\r\n                                                        <div class=\"col-lg-12\">\r\n                                                            <div class=\"wrapper\">\r\n                                                                <button class=\"btn btn-rounded\"\r\n                                                                    [disabled]=\"fg.invalid\"\r\n                                                                    (click)=\"confirmarContrasena() \">INICIAR SESIÓN</button>\r\n        \r\n                                                            </div>\r\n                                                        </div>\r\n                                                       \r\n                                                    </div>\r\n                                                    <br>\r\n                                                    <h4><a href=\"\">¿Todavía no tienes una cuenta BePartners?</a></h4>\r\n                                                    <br>\r\n                                                    <br>\r\n                                                    <h4> <a href=\"\" style=\"color: #00B2A9;font-size: 16px\">REGÍSTRATE</a></h4>\r\n                                                    <br>\r\n\r\n                                                <br />\r\n                                                <br>\r\n                                                <br>\r\n                                                <br>\r\n    \r\n                                            </div>\r\n                                        </form>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                </aw-wizard-step>\r\n            </aw-wizard>\r\n\r\n\r\n\r\n        </div>\r\n    </div>\r\n</section>\r\n<footer class=\"footer2\">\r\n    <div class=\"d-flex justify-content-center bd-highlight mb-3\" style=\"border-top-style: solid;\">\r\n        <div class=\"p-2 bd-highlight\">LEGAL</div>\r\n        <div class=\"p-2 bd-highlight\">PRIVACIDAD</div>\r\n        <div class=\"p-2 bd-highlight\">COPYRIGHT</div>\r\n        <div class=\"p-2 bd-highlight\">COOKIES</div>\r\n    </div>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-4 margin-t-20\">\r\n            </div>\r\n            <div class=\"col-lg-4 margin-t-20\">\r\n                <img class=\"icon-footer\" src=\"../../../../assets/LogoDataCredito.png\">\r\n            </div>\r\n            <div class=\"col-lg-4 margin-t-20\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr>\r\n                <h4>©2019 DataCrédito Experian, All rights reserved</h4>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</footer>"
+module.exports = "<section class=\"u-bg-overlay g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after g-py-100\"\r\n    style=\"background-image: url(../../../../../assets/BackgroundFormularioRegistro.png);\">\r\n    <div class=\"container u-bg-overlay__inner\">\r\n        <img class=\"imgTit\" src=\"../../../../../assets/BePartnersLogo.png\" style=\"height: 110px;\">\r\n        <br>\r\n        <br>\r\n        <h2>Registra tu empresa gratis</h2>\r\n        <h3>y haz parte de nuestra comunidad</h3>\r\n        <br>\r\n\r\n        <div class=\"row justify-content-center align-items-center no-gutters\">\r\n\r\n            <aw-wizard #wizard [navBarLayout]=\"'large-empty-symbols'\">\r\n                <aw-wizard-step stepTitle=\"INFO USUARIO Y EMPRESA\">\r\n                    <ng-template awWizardStepSymbol><i class=\"fa fa-user\"></i></ng-template>\r\n                    <div class=\"container\">\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"custom-form mt-4 pt-4\">\r\n                                    <div id=\"message\"></div>\r\n                                    <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\"\r\n                                        name=\"contact-form\" id=\"contact-form\" style=\"padding: 20px 0px 0px 20px;\"\r\n                                        novalidate [formGroup]=\"fg\">\r\n                                        <div class=\"content\">\r\n                                            <div class=\"row\">\r\n                                                <img src=\"../../../../../assets/Iconos/Info Usuario Perfil.svg\">\r\n                                                <div class=\"col-lg-11\">\r\n                                                    <h2 class=\"titles\">Información del Usuario</h2>\r\n\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"nombre\">NOMBRE</label>\r\n                                                        <input matInput formControlName=\"Name\" type=\"text\"\r\n                                                            class=\"form-control\" id=\"nombre\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"apellido\">APELLIDO</label>\r\n                                                        <input matInput formControlName=\"LastName\" id=\"apellido\"\r\n                                                            type=\"apellido\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n\r\n                                                        <label for=\"exampleFormControlSelect1\">TIPO DE DOCUMENTO</label>\r\n                                                        <select class=\"form-control\" id=\"exampleFormControlSelect1\">\r\n                                                            <option>Cedula de ciudadanía</option>\r\n                                                            <option>Cedula de extranjería</option>\r\n                                                            <option>NIT </option>\r\n                                                        </select>\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"numDoc\">NÚMERO DE DOCUMENTO</label>\r\n                                                        <input id=\"numDoc\" matInput formControlName=\"identification\"\r\n                                                            type=\"numDoc\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"celular\">CELULAR</label>\r\n                                                        <input matInput formControlName=\"Phone\" id=\"celular\"\r\n                                                            type=\"celular\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"correo\">CORREO ELECTRÓNICO</label>\r\n                                                        <input matInput formControlName=\"Email\" type=\"text\"\r\n                                                            class=\"form-control\" id=\"correo\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n\r\n                                                <div class=\"col-lg-12\">\r\n\r\n                                                    <div class=\"form-check\">\r\n                                                        <input type=\"checkbox\" class=\"form-check-input\"\r\n                                                            id=\"exampleCheck1\">\r\n                                                        <label class=\"form-check-label\" for=\"exampleCheck1\">He leído y\r\n                                                            acepto las condiciones de Representante Legal</label>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <br>\r\n                                            <br>\r\n\r\n                                            <div class=\"row\">\r\n                                                <img src=\"../../../../../assets/Iconos/Info Empresa.svg\">\r\n                                                <div class=\"col-lg-10\">\r\n                                                    <h2 class=\"titles\">Información de la Empresa</h2>\r\n\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n\r\n                                            <div class=\"row\">\r\n\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <label for=\"exampleFormControlSelect1\">TIPO DE\r\n                                                        IDENTIFICACIÓN</label>\r\n                                                    <select class=\"form-control\" id=\"exampleFormControlSelect1\">\r\n                                                        <option>Cedula de ciudadanía</option>\r\n                                                        <option>Cedula de extranjería</option>\r\n                                                        <option>NIT </option>\r\n                                                    </select>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresaNumId\">NÚMERO DE IDENTIFICACIÓN</label>\r\n                                                        <input matInput formControlName=\"Nit\" id=\"EmpresaNumId\"\r\n                                                            type=\"EmpresaNumId\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresaRazon\">RAZÓN SOCIAL</label>\r\n                                                        <input matInput formControlName=\"businessName\" type=\"text\"\r\n                                                            class=\"form-control\" id=\"EmpresaRazon\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresanumDoc\">EMAIL FACTURACIÓN</label>\r\n                                                        <input matInput formControlName=\"EmailFact\" id=\"EmpresanumDoc\"\r\n                                                            type=\"EmpresanumDoc\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"EmpresaDireccion\">*DIRECCIÓN CORRESPONDENCIA</label>\r\n                                                        <input matInput formControlName=\"Address\" id=\"EmpresaDireccion\"\r\n                                                            type=\"EmpresaDireccion\" class=\"form-control\">\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"col-lg-6\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <label for=\"ciudad\">CIUDAD</label>\r\n                                                        <ng-template #rt let-r=\"result\" let-t=\"term\">\r\n                                                            <ngb-highlight [result]=\"r.nomHijo\" [term]=\"t\">\r\n                                                            </ngb-highlight>\r\n                                                        </ng-template>\r\n                                                        <input matInput formControlName=\"Citie\" type=\"text\"\r\n                                                            [ngbTypeahead]=\"search\" [resultTemplate]=\"rt\"\r\n                                                            [inputFormatter]=\"formatter\" class=\"form-control\"\r\n                                                            id=\"ciudad\" />\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <h4>Registrándome, acepto los <a href=\"{{url}}\">Términos y\r\n                                                            Condiciones</a> y la <a href=\"{{url}}\">Política de\r\n                                                            privacidad</a> de BePartners - DataCrédito Experian</h4>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"wrapper\">\r\n                                                        <button class=\"btn btn-rounded\"\r\n                                                            [disabled]=\"fg.invalid\"\r\n                                                            (click)=\"createUser() \">REGISTRARME</button>\r\n\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <h4>¿Ya tienes una cuenta? </h4>\r\n                                                    <a href=\"{{url}}\">\r\n                                                        <h4>INICIA SESIÓN</h4>\r\n                                                    </a>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br>\r\n                                            <br>\r\n                                            <br>\r\n                                        </div>\r\n                                    </form>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </aw-wizard-step>\r\n                <aw-wizard-step stepTitle=\"CREA TU CONTRASEÑA\">\r\n                    <ng-template awWizardStepSymbol><i class=\"fa fa-lock\"></i></ng-template>\r\n                    <div class=\"container\">\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"custom-form mt-4 pt-4\">\r\n                                    <div id=\"message\"></div>\r\n                                    <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\"\r\n                                        name=\"contact-form\" id=\"contact-form\" style=\"padding: 20px 0px 0px 20px;\">\r\n                                        <div class=\"content\">\r\n                                            <br>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <div class=\"row\">\r\n                                                            <div class=\"col-lg-1\"></div>\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <label for=\"username\">USUARIO</label>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                        <div class=\"row\">\r\n                                                            <img\r\n                                                                src=\"../../../../../assets/Iconos/Info Usuario Perfil.svg\">\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <input type=\"text\" id=\"username\" [(ngModel)]=\"username\"\r\n                                                                    name=\"username\" class=\"form-control\" required>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <div class=\"row\">\r\n                                                            <div class=\"col-lg-1\"></div>\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <label for=\"password\">CONTRASEÑA</label>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                        <div class=\"row\">\r\n                                                            <img src=\"../../../../../assets/Iconos/Contraseña.svg\">\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <input type=\"password\" id=\"password\"\r\n                                                                    [(ngModel)]=\"password\" name=\"password\"\r\n                                                                    class=\"form-control\" required>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"row\">\r\n                                                <div class=\"col-lg-12\">\r\n                                                    <div class=\"form-group mt-2\">\r\n                                                        <div class=\"row\">\r\n                                                            <div class=\"col-lg-1\"></div>\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <label for=\"passwordConf\">CONFIRMA LA CONTRASEÑA</label>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                        <div class=\"row\">\r\n                                                            <img src=\"../../../../../assets/Iconos/Contraseña.svg\">\r\n                                                            <div class=\"col-lg-10\">\r\n                                                                <input type=\"password\" id=\"passwordConf\"\r\n                                                                    [(ngModel)]=\"passwordConf\" name=\"passwordConf\"\r\n                                                                    class=\"form-control\" required>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                            <br />\r\n                                            <div class=\"row\">\r\n                                                    <div class=\"col-lg-12\">\r\n                                                        <div class=\"wrapper\">\r\n                                                            <button class=\"btn btn-rounded\"\r\n                                                                [disabled]=\"fg.invalid\"\r\n                                                                (click)=\"confirmarContrasena() \">CONFIRMAR</button>\r\n    \r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            <br />\r\n                                            <br>\r\n                                            <br>\r\n                                            <br>\r\n\r\n                                        </div>\r\n                                    </form>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <!--                     <button type=\"button\" awPreviousStep>Go to previous step </button> -->\r\n                    <!--                     <button type=\"button\" awNextStep>Go to next step </button> -->\r\n                </aw-wizard-step>\r\n                <aw-wizard-step stepTitle=\"INGRESA A TU PERFIL\">\r\n                    <ng-template awWizardStepSymbol><i class=\"fa fa-check\"></i></ng-template>\r\n                    <div class=\"container\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-lg-12\">\r\n                                    <div class=\"custom-form mt-4 pt-4\">\r\n                                        <div id=\"message\"></div>\r\n                                        <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\"\r\n                                            name=\"contact-form\" id=\"contact-form\" style=\"padding: 20px 0px 0px 20px;\">\r\n                                            <div class=\"content\">\r\n                                                <br>\r\n                                                <div class=\"row\">\r\n                                                    <div class=\"col-lg-12\">\r\n                                                        <div class=\"form-group mt-2\">\r\n                                                            <div class=\"row\">\r\n                                                                <div class=\"col-lg-1\"></div>\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <label for=\"username\">USUARIO</label>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                            <div class=\"row\">\r\n                                                                <img\r\n                                                                    src=\"../../../../../assets/Iconos/Info Usuario Perfil.svg\">\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <input type=\"text\" id=\"username\" [(ngModel)]=\"username\"\r\n                                                                        name=\"username\" class=\"form-control\" required>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                                <div class=\"row\">\r\n                                                    <div class=\"col-lg-12\">\r\n                                                        <div class=\"form-group mt-2\">\r\n                                                            <div class=\"row\">\r\n                                                                <div class=\"col-lg-1\"></div>\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <label for=\"password\">CONTRASEÑA</label>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                            <div class=\"row\">\r\n                                                                <img src=\"../../../../../assets/Iconos/Contraseña.svg\">\r\n                                                                <div class=\"col-lg-10\">\r\n                                                                    <input type=\"password\" id=\"password\"\r\n                                                                        [(ngModel)]=\"password\" name=\"password\"\r\n                                                                        class=\"form-control\" required>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                                \r\n                                                <br />\r\n                                                <h4>¿Olvidaste tu <a href=\"\">contraseña</a>?</h4>\r\n                                                <div class=\"row\">\r\n                                                        <div class=\"col-lg-12\">\r\n                                                            <div class=\"wrapper\">\r\n                                                                <button class=\"btn btn-rounded\"\r\n                                                                    [disabled]=\"fg.invalid\"\r\n                                                                    (click)=\"confirmarContrasena() \">INICIAR SESIÓN</button>\r\n        \r\n                                                            </div>\r\n                                                        </div>\r\n                                                       \r\n                                                    </div>\r\n                                                    <br>\r\n                                                    <h4><a href=\"\">¿Todavía no tienes una cuenta BePartners?</a></h4>\r\n                                                    <br>\r\n                                                    <br>\r\n                                                    <h4> <a href=\"\" style=\"color: #00B2A9;font-size: 16px\">REGÍSTRATE</a></h4>\r\n                                                    <br>\r\n\r\n                                                <br />\r\n                                                <br>\r\n                                                <br>\r\n                                                <br>\r\n    \r\n                                            </div>\r\n                                        </form>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                </aw-wizard-step>\r\n            </aw-wizard>\r\n\r\n\r\n\r\n        </div>\r\n    </div>\r\n</section>\r\n<footer class=\"footer2\">\r\n    <div class=\"d-flex justify-content-center bd-highlight mb-3\" style=\"border-top-style: solid;\">\r\n        <div class=\"p-2 bd-highlight\">LEGAL</div>\r\n        <div class=\"p-2 bd-highlight\">PRIVACIDAD</div>\r\n        <div class=\"p-2 bd-highlight\">COPYRIGHT</div>\r\n        <div class=\"p-2 bd-highlight\">COOKIES</div>\r\n    </div>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-4 margin-t-20\">\r\n            </div>\r\n            <div class=\"col-lg-4 margin-t-20\">\r\n                <img class=\"icon-footer\" src=\"../../../../assets/LogoDataCredito.png\">\r\n            </div>\r\n            <div class=\"col-lg-4 margin-t-20\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <hr>\r\n                <h4>©2019 DataCrédito Experian, All rights reserved</h4>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</footer>"
 
 /***/ }),
 
@@ -102,7 +102,7 @@ module.exports = "<section class=\"u-bg-overlay g-bg-pos-top-center g-bg-img-her
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"title-create-company\">Perfilamiento usuario</h3>\r\n<form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\">\r\n    <div class=\"content\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6\">\r\n                <img src=\"../../../../../assets/PersonaNatural.png\">\r\n                <h3 style=\"margin-top: 21px;\">PN Sin establecimiento</h3>\r\n\r\n                <div class=\"text-center\"><button class=\"btn btn-primary btn-sx btn btn-custom  btn-rounded\"\r\n                        type=\"button \" (click)=\"isPersonNatu()\">OK</button></div>\r\n\r\n            </div>\r\n            <div class=\"col-lg-6\">\r\n                <img src=\"../../../../../assets/PersonaJuridica.png\">\r\n                <h3>PN - PJ Con establecimiento</h3>\r\n\r\n                commerceEntity.list\r\n                \r\n                <div class=\"text-center\">\r\n                    <button class=\"btn btn-primary btn-sx btn btn-custom  btn-rounded\" type=\"button\"  (click)=\"isPersonJuridic()\">OK\r\n\r\n                    </button></div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</form>"
+module.exports = "<div class=\"content\" style=\"max-width: 675px;\">\r\n    <h2 class=\"title\">Falta poco para hacer parte de BePartners</h2>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-2\">\r\n        </div>\r\n        <div class=\"col-lg-8\">\r\n            <h3 class=\"title\" style=\"margin-bottom: 15px; margin-top: 15px\">Queremos conocer tus necesidades, selecciona\r\n                la opción que más se ajuste a lo que buscas\r\n                para tu negocio</h3>\r\n        </div>\r\n        <div class=\"col-lg-2\">\r\n        </div>\r\n    </div>\r\n    <div class=\"row\" style=\"margin: 10px 60px 10px 60px;\">\r\n        <div class=\"col-lg-6\">\r\n            <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\">\r\n                <h3 class=\"title\" style=\"font-weight: bold;\">Soy Persona Natural</h3>\r\n                <img src=\"../../../../../assets/PersonaNatural.png\">\r\n                <h3 class=\"textContent\">Quiero conocer más información de SCORE e HISTORIA DE CRÉDITO para\r\n                    mejorar y controlar mi vida financiera.</h3>\r\n\r\n                <br>\r\n\r\n                <h4 style=\"margin-bottom: 28px;\">Conoce <a style=\"color: #B7BF10;\" href=\"{{url}}\">MiDataCredito.com</a>\r\n                </h4>\r\n                <div class=\"text-center\"><button class=\"btn btn-primary btn-sx btn btn-custom  btn-rounded\"\r\n                        type=\"button \" (click)=\"isPersonNatu()\">CONTINUAR</button></div>\r\n            </form>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6\">\r\n            <form method=\"post\" action=\"/\" class=\"home-registration-form bg-white border\">\r\n                <h3 class=\"title\" style=\"font-weight: bold\">Soy Persona Jurídica</h3>\r\n                <img src=\"../../../../../assets/PersonaJuridica.png\">\r\n                <h3 class=\"textContent\">Soy dueño de un establecimiento no obligado a registrar en Cámara de Comercio\r\n                </h3>\r\n                <mat-form-field class=\"search-activitie\" *ngIf=\"fromActivitie\">\r\n                    <input matInput placeholder=\"Selecciona el sector comercial\" [matAutocomplete]=\"auto\">\r\n                    <mat-autocomplete #auto=\"matAutocomplete\">\r\n                        <mat-option *ngFor=\"let activitie of listActivities\"\r\n                            (click)=\"idActivitie = activitie.itemCatalogId\" [value]=\"activitie.itemCatalogName\">\r\n                            <small>{{activitie.itemCatalogName}}</small>\r\n                        </mat-option>\r\n                    </mat-autocomplete>\r\n                </mat-form-field>\r\n                <div class=\"text-center\">\r\n                    <button class=\"btn btn-primary btn-sx btn btn-custom  btn-rounded\" type=\"button\"\r\n                        (click)=\"isPersonJuridic()\">CONTINUAR\r\n                    </button></div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <br>\r\n    <h4 style=\"margin-bottom: 15px;\">¿Tienes una pregunta? <a style=\"color: #B7BF10;\" href=\"{{url}}\">Contáctanos</a>\r\n    </h4>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -366,7 +366,7 @@ FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "a\r\n{\r\n    cursor: pointer;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL2xheW91dC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvY2xpZW50L2FwcC9sYXlvdXQvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYVxyXG57XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbn0iXX0= */"
+module.exports = ".navbar-custom .navbar-nav li a\r\n{\r\n    cursor: pointer;\r\n    color: #3d3e3c !important;\r\n\topacity: 0.8;\r\n\tfont-weight: 700;\r\n}\r\n/* button\r\n{\r\n  font-weight: 700;\r\n  border-radius: 8px;\r\n  border-width: 2px;\r\n} */\r\n.btn-custom\r\n{\r\n    margin: 0px 0px 0px 10px;\r\n    \r\n}\r\n/* button:hover {\r\n    background-color:#00B2A9;\r\n    color: white;\r\n    opacity: 0.8; \r\n}\r\n.btn-custom:hover {\r\n    opacity: 0.6;\r\n} */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL2xheW91dC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksZUFBZTtJQUNmLHlCQUF5QjtDQUM1QixZQUFZO0NBQ1osZ0JBQWdCO0FBQ2pCO0FBQ0E7Ozs7O0dBS0c7QUFFSDs7SUFFSSx3QkFBd0I7O0FBRTVCO0FBQ0E7Ozs7Ozs7R0FPRyIsImZpbGUiOiJzcmMvY2xpZW50L2FwcC9sYXlvdXQvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhci1jdXN0b20gLm5hdmJhci1uYXYgbGkgYVxyXG57XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBjb2xvcjogIzNkM2UzYyAhaW1wb3J0YW50O1xyXG5cdG9wYWNpdHk6IDAuODtcclxuXHRmb250LXdlaWdodDogNzAwO1xyXG59XHJcbi8qIGJ1dHRvblxyXG57XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICBib3JkZXItcmFkaXVzOiA4cHg7XHJcbiAgYm9yZGVyLXdpZHRoOiAycHg7XHJcbn0gKi9cclxuXHJcbi5idG4tY3VzdG9tXHJcbntcclxuICAgIG1hcmdpbjogMHB4IDBweCAwcHggMTBweDtcclxuICAgIFxyXG59XHJcbi8qIGJ1dHRvbjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiMwMEIyQTk7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBvcGFjaXR5OiAwLjg7IFxyXG59XHJcbi5idG4tY3VzdG9tOmhvdmVyIHtcclxuICAgIG9wYWNpdHk6IDAuNjtcclxufSAqLyJdfQ== */"
 
 /***/ }),
 
@@ -641,8 +641,36 @@ let DialogComponent = class DialogComponent {
 DialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         template: `
-    <h1> No podemos continuar con tu proceso de registro </h1>
-  `
+  <div style="font-family: 'montserrat',sans-serif;">
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+  <span aria-hidden="true">&times;</span>
+</button>
+  <div class="modal-header row d-flex justify-content-center">
+    <h4 class="modal-title" style="
+    font-weight: bold;
+    font-size: xx-large;
+">¡Lo sentimos!</h4>
+
+  </div>
+  <div class="modal-body">
+    <p style="text-align: center;">
+    No podemos procesar tu registro, por favor valida tus datos e inténtalo nuevamente
+    <br>
+    
+    Para más información, consulta nuestra <a href="{{url}}"><h4 style="
+    color: #B7BF10;
+">CENTRO DE AYUDA</h4></a>
+    </p>
+  </div>
+  <div class="modal-footer row d-flex justify-content-center">
+    <button type="button" class="btn btn-rounded" (click)="activeModal.close('Close click')" style="
+    background-color: #B7BF10;
+    color: white;
+    font-weight: bolder;
+    width: 185px;">Cerrar</button>
+  </div>
+  <div>
+`
     })
 ], DialogComponent);
 
@@ -657,7 +685,7 @@ DialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".bg-register {\n  background: url('BackgroundFormularioRegistro.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\nform {\n  font-family: \"montserrat\", sans-serif;\n}\n\n.titles {\n  font-family: \"roboto\", sans-serif;\n  font-size: 23px;\n}\n\n.content {\n  margin: 10px 40px 10px 25px;\n}\n\nimg {\n  margin-top: -14px;\n}\n\n.wrapper {\n  text-align: center;\n}\n\n.button {\n  position: absolute;\n  top: 50%;\n}\n\nh1 {\n  text-align: center;\n  font-family: \"Roboto\", sans-serif;\n}\n\nh3 {\n  text-align: center;\n  font-family: \"Roboto\", sans-serif;\n}\n\n.imgTit {\n  display: block;\n  margin: auto;\n}\n\nh4 {\n  text-align: center;\n}\n\n.home-registration-form {\n  border-radius: 35px;\n}\n\naw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.current .label, aw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.editing .label {\n  color: violet;\n}\n\naw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.current .step-indicator, aw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.editing .step-indicator {\n  border-color: violet !important;\n  background-color: violet !important;\n}\n\naw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep .label {\n  text-transform: lowercase;\n}\n\n.footer2 {\n  padding: 50px 0;\n  background-size: 100% 81%;\n  background-color: #3D3E3C;\n  font-family: \"montserrat\", sans-serif;\n  color: white;\n  padding-top: 0px;\n}\n\nbutton {\n  background-color: #B7BF10;\n  color: white;\n  font-weight: bolder;\n  width: 270px;\n}\n\na {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9jcmVhdGUtdXNlci9DOlxcVXNlcnNcXGM2MDU5NWFcXERvY3VtZW50c1xcUmVwb19Gcm9udFxcYmVfcGFydG5lcnNfdWkvc3JjXFxjbGllbnRcXGFwcFxcbW9kdWxlc1xcdXNlclxcY3JlYXRlLXVzZXJcXGNyZWF0ZS11c2VyLnNjc3MiLCJzcmMvY2xpZW50L2FwcC9tb2R1bGVzL3VzZXIvY3JlYXRlLXVzZXIvY3JlYXRlLXVzZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1EQUFBO0VBQ0EsNEJBQUE7RUFDQSxzQkFBQTtFQUNBLDJCQUFBO0FDQ0Y7O0FEQ0E7RUFDRSxxQ0FBQTtBQ0VGOztBRENBO0VBRUUsaUNBQUE7RUFDQSxlQUFBO0FDQ0Y7O0FEQ0E7RUFFRSwyQkFBQTtBQ0NGOztBRENBO0VBQ0UsaUJBQUE7QUNFRjs7QURBQTtFQUNFLGtCQUFBO0FDR0Y7O0FEQUE7RUFDRSxrQkFBQTtFQUNBLFFBQUE7QUNHRjs7QUREQTtFQUNFLGtCQUFBO0VBQ0EsaUNBQUE7QUNJRjs7QURGQTtFQUNFLGtCQUFBO0VBQ0EsaUNBQUE7QUNLRjs7QURGQTtFQUVJLGNBQUE7RUFDQSxZQUFBO0FDSUo7O0FEREE7RUFFRSxrQkFBQTtBQ0dGOztBREFBO0VBQ0UsbUJBQUE7QUNHRjs7QURFTTtFQUNFLGFBQUE7QUNDUjs7QURFTTtFQUNFLCtCQUFBO0VBQ0EsbUNBQUE7QUNBUjs7QURHTTtFQUNFLHlCQUFBO0FDRFI7O0FETUE7RUFDRSxlQUFBO0VBQ0EseUJBQUE7RUFDQSx5QkFBQTtFQUNELHFDQUFBO0VBQ0MsWUFBQTtFQUNBLGdCQUFBO0FDSEY7O0FES0E7RUFFRSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7QUNIRjs7QURNQTtFQUNFLFlBQUE7QUNIRiIsImZpbGUiOiJzcmMvY2xpZW50L2FwcC9tb2R1bGVzL3VzZXIvY3JlYXRlLXVzZXIvY3JlYXRlLXVzZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iZy1yZWdpc3RlciB7XHJcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL2ltYWdlcy9CYWNrZ3JvdW5kRm9ybXVsYXJpb1JlZ2lzdHJvLnBuZ1wiKTtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG59XHJcbmZvcm17XHJcbiAgZm9udC1mYW1pbHk6ICdtb250c2VycmF0JyxzYW5zLXNlcmlmO1xyXG5cclxufVxyXG4udGl0bGVzXHJcbntcclxuICBmb250LWZhbWlseTogJ3JvYm90bycsc2Fucy1zZXJpZjtcclxuICBmb250LXNpemU6IDIzcHg7XHJcbn1cclxuLmNvbnRlbnRcclxue1xyXG4gIG1hcmdpbjogMTBweCA0MHB4IDEwcHggMjVweDtcclxufVxyXG5pbWd7XHJcbiAgbWFyZ2luLXRvcDogLTE0cHg7XHJcbn1cclxuLndyYXBwZXIge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLmJ1dHRvbiB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogNTAlO1xyXG59XHJcbmgxe1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBmb250LWZhbWlseTogJ1JvYm90bycsc2Fucy1zZXJpZjtcclxufVxyXG5oM3tcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLHNhbnMtc2VyaWY7XHJcblxyXG59XHJcbi5pbWdUaXRcclxue1xyXG4gICAgZGlzcGxheTpibG9jaztcclxuICAgIG1hcmdpbjphdXRvO1xyXG59XHJcblxyXG5oNFxyXG57XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyXHJcblxyXG59XHJcbi5ob21lLXJlZ2lzdHJhdGlvbi1mb3JtIHtcclxuICBib3JkZXItcmFkaXVzOiAzNXB4O1xyXG59XHJcbmF3LXdpemFyZC5jdXN0b20tc3RlcC1jc3Mge1xyXG4gIGF3LXdpemFyZC1uYXZpZ2F0aW9uLWJhci5ob3Jpem9udGFsIHVsLnN0ZXBzLWluZGljYXRvciBsaSB7XHJcbiAgICAmI2N1c3RvbVN0ZXAge1xyXG4gICAgICAmLmN1cnJlbnQgLmxhYmVsLCAmLmVkaXRpbmcgLmxhYmVsIHtcclxuICAgICAgICBjb2xvcjogdmlvbGV0O1xyXG4gICAgICB9XHJcblxyXG4gICAgICAmLmN1cnJlbnQgLnN0ZXAtaW5kaWNhdG9yLCAmLmVkaXRpbmcgLnN0ZXAtaW5kaWNhdG9yIHtcclxuICAgICAgICBib3JkZXItY29sb3I6IHZpb2xldCAhaW1wb3J0YW50O1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHZpb2xldCAhaW1wb3J0YW50O1xyXG4gICAgICB9XHJcblxyXG4gICAgICAubGFiZWwge1xyXG4gICAgICAgIHRleHQtdHJhbnNmb3JtOiBsb3dlcmNhc2U7XHJcbiAgICAgIH1cclxuICAgIH1cclxuICB9XHJcbn1cclxuLmZvb3RlcjIge1xyXG4gIHBhZGRpbmc6IDUwcHggMDtcclxuICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgODElO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMzRDNFM0M7XHJcblx0Zm9udC1mYW1pbHk6ICdtb250c2VycmF0JyxzYW5zLXNlcmlmO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBwYWRkaW5nLXRvcDogMHB4O1xyXG59XHJcbmJ1dHRvblxyXG57XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI0I3QkYxMDtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICB3aWR0aDogMjcwcHg7XHJcbiAgXHJcbn1cclxuYXtcclxuICBjb2xvcjogYmxhY2tcclxufSIsIi5iZy1yZWdpc3RlciB7XG4gIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9pbWFnZXMvQmFja2dyb3VuZEZvcm11bGFyaW9SZWdpc3Ryby5wbmdcIik7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbn1cblxuZm9ybSB7XG4gIGZvbnQtZmFtaWx5OiBcIm1vbnRzZXJyYXRcIiwgc2Fucy1zZXJpZjtcbn1cblxuLnRpdGxlcyB7XG4gIGZvbnQtZmFtaWx5OiBcInJvYm90b1wiLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDIzcHg7XG59XG5cbi5jb250ZW50IHtcbiAgbWFyZ2luOiAxMHB4IDQwcHggMTBweCAyNXB4O1xufVxuXG5pbWcge1xuICBtYXJnaW4tdG9wOiAtMTRweDtcbn1cblxuLndyYXBwZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xufVxuXG5oMSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC1mYW1pbHk6IFwiUm9ib3RvXCIsIHNhbnMtc2VyaWY7XG59XG5cbmgzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LWZhbWlseTogXCJSb2JvdG9cIiwgc2Fucy1zZXJpZjtcbn1cblxuLmltZ1RpdCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBtYXJnaW46IGF1dG87XG59XG5cbmg0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaG9tZS1yZWdpc3RyYXRpb24tZm9ybSB7XG4gIGJvcmRlci1yYWRpdXM6IDM1cHg7XG59XG5cbmF3LXdpemFyZC5jdXN0b20tc3RlcC1jc3MgYXctd2l6YXJkLW5hdmlnYXRpb24tYmFyLmhvcml6b250YWwgdWwuc3RlcHMtaW5kaWNhdG9yIGxpI2N1c3RvbVN0ZXAuY3VycmVudCAubGFiZWwsIGF3LXdpemFyZC5jdXN0b20tc3RlcC1jc3MgYXctd2l6YXJkLW5hdmlnYXRpb24tYmFyLmhvcml6b250YWwgdWwuc3RlcHMtaW5kaWNhdG9yIGxpI2N1c3RvbVN0ZXAuZWRpdGluZyAubGFiZWwge1xuICBjb2xvcjogdmlvbGV0O1xufVxuYXctd2l6YXJkLmN1c3RvbS1zdGVwLWNzcyBhdy13aXphcmQtbmF2aWdhdGlvbi1iYXIuaG9yaXpvbnRhbCB1bC5zdGVwcy1pbmRpY2F0b3IgbGkjY3VzdG9tU3RlcC5jdXJyZW50IC5zdGVwLWluZGljYXRvciwgYXctd2l6YXJkLmN1c3RvbS1zdGVwLWNzcyBhdy13aXphcmQtbmF2aWdhdGlvbi1iYXIuaG9yaXpvbnRhbCB1bC5zdGVwcy1pbmRpY2F0b3IgbGkjY3VzdG9tU3RlcC5lZGl0aW5nIC5zdGVwLWluZGljYXRvciB7XG4gIGJvcmRlci1jb2xvcjogdmlvbGV0ICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQtY29sb3I6IHZpb2xldCAhaW1wb3J0YW50O1xufVxuYXctd2l6YXJkLmN1c3RvbS1zdGVwLWNzcyBhdy13aXphcmQtbmF2aWdhdGlvbi1iYXIuaG9yaXpvbnRhbCB1bC5zdGVwcy1pbmRpY2F0b3IgbGkjY3VzdG9tU3RlcCAubGFiZWwge1xuICB0ZXh0LXRyYW5zZm9ybTogbG93ZXJjYXNlO1xufVxuXG4uZm9vdGVyMiB7XG4gIHBhZGRpbmc6IDUwcHggMDtcbiAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDgxJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzNEM0UzQztcbiAgZm9udC1mYW1pbHk6IFwibW9udHNlcnJhdFwiLCBzYW5zLXNlcmlmO1xuICBjb2xvcjogd2hpdGU7XG4gIHBhZGRpbmctdG9wOiAwcHg7XG59XG5cbmJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNCN0JGMTA7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcbiAgd2lkdGg6IDI3MHB4O1xufVxuXG5hIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
+module.exports = ".bg-register {\n  background: url('BackgroundFormularioRegistro.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\nform {\n  font-family: \"montserrat\", sans-serif;\n}\n\n.titles {\n  font-family: \"roboto\", sans-serif;\n  font-size: 23px;\n}\n\n.content {\n  margin: 10px 40px 10px 25px;\n}\n\nimg {\n  margin-top: -14px;\n}\n\n.wrapper {\n  text-align: center;\n}\n\n.button {\n  position: absolute;\n  top: 50%;\n}\n\nh1 {\n  text-align: center;\n  font-family: \"Roboto\", sans-serif;\n}\n\nh3 {\n  text-align: center;\n}\n\nh2 {\n  text-align: center;\n}\n\n.imgTit {\n  display: block;\n  margin: auto;\n}\n\nh4 {\n  text-align: center;\n}\n\naw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.current .label, aw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.editing .label {\n  color: violet;\n}\n\naw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.current .step-indicator, aw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.editing .step-indicator {\n  border-color: violet !important;\n  background-color: violet !important;\n}\n\naw-wizard.custom-step-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep .label {\n  text-transform: lowercase;\n}\n\n.footer2 {\n  padding: 50px 0;\n  background-size: 100% 81%;\n  background-color: #3D3E3C;\n  font-family: \"montserrat\", sans-serif;\n  color: white;\n  padding-top: 0px;\n}\n\nbutton {\n  background-color: #B7BF10;\n  color: white;\n  font-weight: bolder;\n  width: 270px;\n}\n\na {\n  color: #B7BF10;\n}\n\nbutton:hover {\n  background-color: #D6DF0D;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9jcmVhdGUtdXNlci9DOlxcVXNlcnNcXGM2MDU5NWFcXERvY3VtZW50c1xcUmVwb19Gcm9udFxcYmVfcGFydG5lcnNfdWkvc3JjXFxjbGllbnRcXGFwcFxcbW9kdWxlc1xcdXNlclxcY3JlYXRlLXVzZXJcXGNyZWF0ZS11c2VyLnNjc3MiLCJzcmMvY2xpZW50L2FwcC9tb2R1bGVzL3VzZXIvY3JlYXRlLXVzZXIvY3JlYXRlLXVzZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1EQUFBO0VBQ0EsNEJBQUE7RUFDQSxzQkFBQTtFQUNBLDJCQUFBO0FDQ0Y7O0FEQ0E7RUFDRSxxQ0FBQTtBQ0VGOztBRENBO0VBRUUsaUNBQUE7RUFDQSxlQUFBO0FDQ0Y7O0FEQ0E7RUFFRSwyQkFBQTtBQ0NGOztBRENBO0VBQ0UsaUJBQUE7QUNFRjs7QURBQTtFQUNFLGtCQUFBO0FDR0Y7O0FEQUE7RUFDRSxrQkFBQTtFQUNBLFFBQUE7QUNHRjs7QUREQTtFQUNFLGtCQUFBO0VBQ0EsaUNBQUE7QUNJRjs7QURGQTtFQUNFLGtCQUFBO0FDS0Y7O0FESEE7RUFDRSxrQkFBQTtBQ01GOztBREpBO0VBRUksY0FBQTtFQUNBLFlBQUE7QUNNSjs7QURIQTtFQUVFLGtCQUFBO0FDS0Y7O0FEQ007RUFDRSxhQUFBO0FDRVI7O0FEQ007RUFDRSwrQkFBQTtFQUNBLG1DQUFBO0FDQ1I7O0FERU07RUFDRSx5QkFBQTtBQ0FSOztBREtBO0VBQ0UsZUFBQTtFQUNBLHlCQUFBO0VBQ0EseUJBQUE7RUFDRCxxQ0FBQTtFQUNDLFlBQUE7RUFDQSxnQkFBQTtBQ0ZGOztBRElBO0VBRUUseUJBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0FDRkY7O0FES0E7RUFDRSxjQUFBO0FDRkY7O0FESUE7RUFBYyx5QkFBQTtFQUEwQixZQUFBO0FDQ3hDIiwiZmlsZSI6InNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9jcmVhdGUtdXNlci9jcmVhdGUtdXNlci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJnLXJlZ2lzdGVyIHtcclxuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvaW1hZ2VzL0JhY2tncm91bmRGb3JtdWxhcmlvUmVnaXN0cm8ucG5nXCIpO1xyXG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbn1cclxuZm9ybXtcclxuICBmb250LWZhbWlseTogJ21vbnRzZXJyYXQnLHNhbnMtc2VyaWY7XHJcblxyXG59XHJcbi50aXRsZXNcclxue1xyXG4gIGZvbnQtZmFtaWx5OiAncm9ib3RvJyxzYW5zLXNlcmlmO1xyXG4gIGZvbnQtc2l6ZTogMjNweDtcclxufVxyXG4uY29udGVudFxyXG57XHJcbiAgbWFyZ2luOiAxMHB4IDQwcHggMTBweCAyNXB4O1xyXG59XHJcbmltZ3tcclxuICBtYXJnaW4tdG9wOiAtMTRweDtcclxufVxyXG4ud3JhcHBlciB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4uYnV0dG9uIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA1MCU7XHJcbn1cclxuaDF7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvJyxzYW5zLXNlcmlmO1xyXG59XHJcbmgze1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5oMntcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLmltZ1RpdFxyXG57XHJcbiAgICBkaXNwbGF5OmJsb2NrO1xyXG4gICAgbWFyZ2luOmF1dG87XHJcbn1cclxuXHJcbmg0XHJcbntcclxuICB0ZXh0LWFsaWduOiBjZW50ZXJcclxufVxyXG5cclxuYXctd2l6YXJkLmN1c3RvbS1zdGVwLWNzcyB7XHJcbiAgYXctd2l6YXJkLW5hdmlnYXRpb24tYmFyLmhvcml6b250YWwgdWwuc3RlcHMtaW5kaWNhdG9yIGxpIHtcclxuICAgICYjY3VzdG9tU3RlcCB7XHJcbiAgICAgICYuY3VycmVudCAubGFiZWwsICYuZWRpdGluZyAubGFiZWwge1xyXG4gICAgICAgIGNvbG9yOiB2aW9sZXQ7XHJcbiAgICAgIH1cclxuXHJcbiAgICAgICYuY3VycmVudCAuc3RlcC1pbmRpY2F0b3IsICYuZWRpdGluZyAuc3RlcC1pbmRpY2F0b3Ige1xyXG4gICAgICAgIGJvcmRlci1jb2xvcjogdmlvbGV0ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogdmlvbGV0ICFpbXBvcnRhbnQ7XHJcbiAgICAgIH1cclxuXHJcbiAgICAgIC5sYWJlbCB7XHJcbiAgICAgICAgdGV4dC10cmFuc2Zvcm06IGxvd2VyY2FzZTtcclxuICAgICAgfVxyXG4gICAgfVxyXG4gIH1cclxufVxyXG4uZm9vdGVyMiB7XHJcbiAgcGFkZGluZzogNTBweCAwO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogMTAwJSA4MSU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzNEM0UzQztcclxuXHRmb250LWZhbWlseTogJ21vbnRzZXJyYXQnLHNhbnMtc2VyaWY7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHBhZGRpbmctdG9wOiAwcHg7XHJcbn1cclxuYnV0dG9uXHJcbntcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjQjdCRjEwO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBmb250LXdlaWdodDogYm9sZGVyO1xyXG4gIHdpZHRoOiAyNzBweDtcclxuICBcclxufVxyXG5he1xyXG4gIGNvbG9yOiAjQjdCRjEwO1xyXG59XHJcbmJ1dHRvbjpob3ZlciB7YmFja2dyb3VuZC1jb2xvcjojRDZERjBEOyBjb2xvcjogd2hpdGV9IiwiLmJnLXJlZ2lzdGVyIHtcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL2ltYWdlcy9CYWNrZ3JvdW5kRm9ybXVsYXJpb1JlZ2lzdHJvLnBuZ1wiKTtcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xufVxuXG5mb3JtIHtcbiAgZm9udC1mYW1pbHk6IFwibW9udHNlcnJhdFwiLCBzYW5zLXNlcmlmO1xufVxuXG4udGl0bGVzIHtcbiAgZm9udC1mYW1pbHk6IFwicm9ib3RvXCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc2l6ZTogMjNweDtcbn1cblxuLmNvbnRlbnQge1xuICBtYXJnaW46IDEwcHggNDBweCAxMHB4IDI1cHg7XG59XG5cbmltZyB7XG4gIG1hcmdpbi10b3A6IC0xNHB4O1xufVxuXG4ud3JhcHBlciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG59XG5cbmgxIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LWZhbWlseTogXCJSb2JvdG9cIiwgc2Fucy1zZXJpZjtcbn1cblxuaDMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmgyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaW1nVGl0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIG1hcmdpbjogYXV0bztcbn1cblxuaDQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmF3LXdpemFyZC5jdXN0b20tc3RlcC1jc3MgYXctd2l6YXJkLW5hdmlnYXRpb24tYmFyLmhvcml6b250YWwgdWwuc3RlcHMtaW5kaWNhdG9yIGxpI2N1c3RvbVN0ZXAuY3VycmVudCAubGFiZWwsIGF3LXdpemFyZC5jdXN0b20tc3RlcC1jc3MgYXctd2l6YXJkLW5hdmlnYXRpb24tYmFyLmhvcml6b250YWwgdWwuc3RlcHMtaW5kaWNhdG9yIGxpI2N1c3RvbVN0ZXAuZWRpdGluZyAubGFiZWwge1xuICBjb2xvcjogdmlvbGV0O1xufVxuYXctd2l6YXJkLmN1c3RvbS1zdGVwLWNzcyBhdy13aXphcmQtbmF2aWdhdGlvbi1iYXIuaG9yaXpvbnRhbCB1bC5zdGVwcy1pbmRpY2F0b3IgbGkjY3VzdG9tU3RlcC5jdXJyZW50IC5zdGVwLWluZGljYXRvciwgYXctd2l6YXJkLmN1c3RvbS1zdGVwLWNzcyBhdy13aXphcmQtbmF2aWdhdGlvbi1iYXIuaG9yaXpvbnRhbCB1bC5zdGVwcy1pbmRpY2F0b3IgbGkjY3VzdG9tU3RlcC5lZGl0aW5nIC5zdGVwLWluZGljYXRvciB7XG4gIGJvcmRlci1jb2xvcjogdmlvbGV0ICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQtY29sb3I6IHZpb2xldCAhaW1wb3J0YW50O1xufVxuYXctd2l6YXJkLmN1c3RvbS1zdGVwLWNzcyBhdy13aXphcmQtbmF2aWdhdGlvbi1iYXIuaG9yaXpvbnRhbCB1bC5zdGVwcy1pbmRpY2F0b3IgbGkjY3VzdG9tU3RlcCAubGFiZWwge1xuICB0ZXh0LXRyYW5zZm9ybTogbG93ZXJjYXNlO1xufVxuXG4uZm9vdGVyMiB7XG4gIHBhZGRpbmc6IDUwcHggMDtcbiAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDgxJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzNEM0UzQztcbiAgZm9udC1mYW1pbHk6IFwibW9udHNlcnJhdFwiLCBzYW5zLXNlcmlmO1xuICBjb2xvcjogd2hpdGU7XG4gIHBhZGRpbmctdG9wOiAwcHg7XG59XG5cbmJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNCN0JGMTA7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcbiAgd2lkdGg6IDI3MHB4O1xufVxuXG5hIHtcbiAgY29sb3I6ICNCN0JGMTA7XG59XG5cbmJ1dHRvbjpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNENkRGMEQ7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -675,17 +703,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _domain_models_register_register_model__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../domain/models/register/register.model */ "./src/domain/models/register/register.model.ts");
-/* harmony import */ var _domain_models_register_third_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../domain/models/register/third.model */ "./src/domain/models/register/third.model.ts");
-/* harmony import */ var _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../domain/models/register/thirdInfo.model */ "./src/domain/models/register/thirdInfo.model.ts");
-/* harmony import */ var _domain_models_register_user_model__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../domain/models/register/user.model */ "./src/domain/models/register/user.model.ts");
-/* harmony import */ var _services_register_register_provider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../services/register/register.provider */ "./src/client/app/services/register/register.provider.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _domain_models_register_categoryrequest_model__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../../domain/models/register/categoryrequest.model */ "./src/domain/models/register/categoryrequest.model.ts");
-/* harmony import */ var _services_register_category_provider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../services/register/category.provider */ "./src/client/app/services/register/category.provider.ts");
-/* harmony import */ var _services_register_status_provider__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../services/register/status.provider */ "./src/client/app/services/register/status.provider.ts");
-/* harmony import */ var angular_archwizard__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! angular-archwizard */ "./node_modules/angular-archwizard/fesm2015/angular-archwizard.js");
+/* harmony import */ var _domain_builders_user_model_builder__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../domain/builders/user.model.builder */ "./src/domain/builders/user.model.builder.ts");
+/* harmony import */ var _domain_models_register_register_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../domain/models/register/register.model */ "./src/domain/models/register/register.model.ts");
+/* harmony import */ var _domain_models_register_third_model__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../domain/models/register/third.model */ "./src/domain/models/register/third.model.ts");
+/* harmony import */ var _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../domain/models/register/thirdInfo.model */ "./src/domain/models/register/thirdInfo.model.ts");
+/* harmony import */ var _domain_models_register_user_model__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../../domain/models/register/user.model */ "./src/domain/models/register/user.model.ts");
+/* harmony import */ var _domain_models_register_userInfo_model__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../../domain/models/register/userInfo.model */ "./src/domain/models/register/userInfo.model.ts");
+/* harmony import */ var _services_register_register_provider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../services/register/register.provider */ "./src/client/app/services/register/register.provider.ts");
+/* harmony import */ var _domain_models_register_rootobject_model__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../../domain/models/register/rootobject.model */ "./src/domain/models/register/rootobject.model.ts");
+/* harmony import */ var _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../../domain/enums/Catalog.enum */ "./src/domain/enums/Catalog.enum.ts");
+/* harmony import */ var _DialogComponent__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./DialogComponent */ "./src/client/app/modules/user/create-user/DialogComponent.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _rues_rues_user__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../rues/rues-user */ "./src/client/app/modules/user/rues/rues-user.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _domain_models_register_categoryrequest_model__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../../domain/models/register/categoryrequest.model */ "./src/domain/models/register/categoryrequest.model.ts");
+/* harmony import */ var _services_register_category_provider__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../services/register/category.provider */ "./src/client/app/services/register/category.provider.ts");
+/* harmony import */ var _services_register_status_provider__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../services/register/status.provider */ "./src/client/app/services/register/status.provider.ts");
+/* harmony import */ var angular_archwizard__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! angular-archwizard */ "./node_modules/angular-archwizard/fesm2015/angular-archwizard.js");
+
+
+
+
+
+
 
 
 
@@ -709,19 +749,19 @@ let CreateRegisterComponent = class CreateRegisterComponent {
         this.router = router;
         this.statusRegister = statusRegister;
         this.categoryService = categoryService;
-        this.register = new _domain_models_register_register_model__WEBPACK_IMPORTED_MODULE_4__["Register"];
-        this.third = new _domain_models_register_third_model__WEBPACK_IMPORTED_MODULE_5__["Third"]();
-        this.user = new _domain_models_register_user_model__WEBPACK_IMPORTED_MODULE_7__["User"]();
+        this.register = new _domain_models_register_register_model__WEBPACK_IMPORTED_MODULE_5__["Register"];
+        this.third = new _domain_models_register_third_model__WEBPACK_IMPORTED_MODULE_6__["Third"]();
+        this.user = new _domain_models_register_user_model__WEBPACK_IMPORTED_MODULE_8__["User"]();
         this.username = "";
         this.password = "";
         this.passwordConf = "";
         //	public emailThirdInfo= new ThirdInfo();
-        this.addresThirdInfo = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
-        this.cityThirdInfo = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
-        this.cityCategory = new _domain_models_register_categoryrequest_model__WEBPACK_IMPORTED_MODULE_11__["CategoryRequest"]();
+        this.addresThirdInfo = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_7__["ThirdInfo"]();
+        this.cityThirdInfo = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_7__["ThirdInfo"]();
+        this.cityCategory = new _domain_models_register_categoryrequest_model__WEBPACK_IMPORTED_MODULE_17__["CategoryRequest"]();
         /**Inicio Auto-complete*/
         this.formatter = (x) => x.nomHijo + ", " + x.nomPadre;
-        this.search = (text$) => text$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["debounceTime"])(200), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["map"])(term => term === '' ? [] : this.listCities.filter(v => v.nomHijo.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10)));
+        this.search = (text$) => text$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["debounceTime"])(200), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["map"])(term => term === '' ? [] : this.listCities.filter(v => v.nomHijo.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10)));
         this.callCities();
     }
     ngOnInit() {
@@ -739,175 +779,189 @@ let CreateRegisterComponent = class CreateRegisterComponent {
         });
     }
     createUser() {
-        //   const ct = this.fg.controls
-        //   //Usuario
-        //   this.user.vIdUserPublic = "";
-        //   this.user.vIdType = "101002";
-        //   this.user.vIdentificationNumber = ct.identification.value;
-        //   this.user.vName = ct.Name.value;
-        //   this.user.vLastName = ct.LastName.value;
-        //   this.user.vEmail = ct.Email.value;
-        //   this.user.vPhone = ct.Phone.value;
-        //   this.user.vProfilePicture = "foto";
-        //   this.user.vEnable = 1;
-        //   //userInfo
-        //   var userInfoEntie = new UserInfo()
-        //   userInfoEntie.vIdUserPublic = "",
-        //     userInfoEntie.vIdInfoTypeUser = Catalog.Anonimo,
-        //     userInfoEntie.vValue = "",
-        //     userInfoEntie.vEnable = 1
-        //   this.userInfo = [userInfoEntie];
-        //   //third
-        //   this.third.vIdThirdPublic = "";
-        //   this.third.vIdType = '101002';
-        //   this.third.vIdentificationNumber = ct.Nit.value;
-        //   this.third.vBusinessName = ct.businessName.value;
-        //   this.third.vEnable = 1;
-        //   this.third.idThird = null
-        //   //thirdInfo
-        //   //thirdInfo MAIL_FACTURACION("301002")
-        //   var thirdInfoEntieMail = new ThirdInfo()
-        //   thirdInfoEntieMail.idThirdInfioPrimaria = null;
-        //   thirdInfoEntieMail.vidInfoTypeThird = Catalog.ValueCampoMailFacturacion
-        //   thirdInfoEntieMail.vidThirdPublic = ""
-        //   thirdInfoEntieMail.idThird = null
-        //   thirdInfoEntieMail.vvalue = ct.EmailFact.value
-        //   thirdInfoEntieMail.venable = 1
-        //   //thirdInfo DIRECCION_CORRESPONDENCIA("301003")
-        //   var thirdInfoEntieAddress = new ThirdInfo()
-        //   thirdInfoEntieAddress.idThirdInfioPrimaria = null;
-        //   thirdInfoEntieAddress.vidInfoTypeThird = Catalog.ValueCampoDireccionCorrespondencia
-        //   thirdInfoEntieAddress.vidThirdPublic = ""
-        //   thirdInfoEntieAddress.idThird = null
-        //   thirdInfoEntieAddress.vvalue = ct.Address.value
-        //   thirdInfoEntieAddress.venable = 1
-        //   //thirdInfo CIUDAD("301004")
-        //   var thirdInfoCitie = new ThirdInfo()
-        //   thirdInfoCitie.idThirdInfioPrimaria = null;
-        //   thirdInfoCitie.vidInfoTypeThird = Catalog.ValueCampoCiudad
-        //   thirdInfoCitie.vidThirdPublic = ""
-        //   thirdInfoCitie.idThird = null
-        //   thirdInfoCitie.vvalue = ct.Citie.value.codHijo
-        //   thirdInfoCitie.venable = 1
-        //   this.thirdInfo = [thirdInfoEntieMail, thirdInfoEntieAddress, thirdInfoCitie];
-        //   //Usuario 
-        //   var register = new Register();
-        //   register.user = this.user;
-        //   register.userInfo = this.userInfo;
-        //   register.third = this.third;
-        //   register.thirdInfo = this.thirdInfo;
-        //   //Todo
-        //   var rootObject = new RootObject()
-        //   rootObject.content = register
-        //   rootObject.message = null
-        //   rootObject.status = null
-        //   var builder = new UserBuilder()
-        //     .buildWithuser(this.user)
-        //     .buildWithuserInfo(this.userInfo)
-        //     .buildWiththird(this.third)
-        //     .buildWiththirdInfo(this.thirdInfo)
-        //     .build()
-        //   this.serviceRegister.create(builder).subscribe(user => this.mapUser(user));
-        // }
-        // private mapUser(base: RootObject): void {
-        //   var ListUser = null;
-        //   var ListThird = null;
-        //   var RuesThird = null;
-        //   base.content.userInfo.forEach(element => {
-        //     if (element.vIdInfoTypeUser == Catalog.SeccionListasUsuario) {
-        //       ListUser = element.vValue;
-        //     }
-        //   });
-        //   base.content.thirdInfo.forEach(element => {
-        //     switch (element.vidInfoTypeThird) {
-        //       case Catalog.SeccionListasTercero: {
-        //         ListThird = element.vvalue;
-        //         break;
-        //       }
-        //       case Catalog.SeccionRuesTercero: {
-        //         RuesThird = element.vvalue;
-        //         break;
-        //       }
-        //     }
-        //   });
-        //   if (ListUser == Catalog.ValueListasErrorConsulta && ListThird == Catalog.ValueListasErrorConsulta) {
-        //     alert('Ocurrio un error al tratar de consultar listas restrictivas')
-        //   }
-        //   else if (ListUser == Catalog.ValueListasReportado && ListThird == Catalog.ValueListasReportado) {
-        //     this.dialog.open(DialogComponent).afterClosed().subscribe(result => {
-        //       this.router.navigate(['']);
-        //     });
-        //   }
-        //   else if (ListUser == Catalog.ValueListasNoReportado && ListThird == Catalog.ValueListasNoReportado) {
-        //     // if (RuesThird == Catalog.ValueRuesInactivo || RuesThird == Catalog.ValueRuesSinResultado) {
-        //       if (true) {
-        //       this.dialog
-        //         .open(RuesUserComponent)
-        //         .afterClosed()
-        //         .subscribe(data => this.isPersonJuridic(data))
-        //     }
-        //     switch (RuesThird) {
-        //       case Catalog.ValueRuesActivo: {
-        //         this.wizard.navigation.goToNextStep();
-        //         this.register=base.content;//Content contiene la informacion del registro con los Ids generados
-        //         break;
-        //       }
-        //       case Catalog.ValueRuesErrorConsulta: {
-        //         break;
-        //       }
-        //     }
-        //   }
-        this.wizard.navigation.goToNextStep();
+        const ct = this.fg.controls;
+        //Usuario
+        this.user.vIdUserPublic = "";
+        this.user.vIdType = "101002";
+        this.user.vIdentificationNumber = ct.identification.value;
+        this.user.vName = ct.Name.value;
+        this.user.vLastName = ct.LastName.value;
+        this.user.vEmail = ct.Email.value;
+        this.user.vPhone = ct.Phone.value;
+        this.user.vProfilePicture = "foto";
+        this.user.vEnable = 1;
+        //userInfo
+        var userInfoEntie = new _domain_models_register_userInfo_model__WEBPACK_IMPORTED_MODULE_9__["UserInfo"]();
+        userInfoEntie.vIdUserPublic = "",
+            userInfoEntie.vIdInfoTypeUser = _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].Anonimo,
+            userInfoEntie.vValue = "",
+            userInfoEntie.vEnable = 1;
+        this.userInfo = [userInfoEntie];
+        //third
+        this.third.vIdThirdPublic = "";
+        this.third.vIdType = '101002';
+        this.third.vIdentificationNumber = ct.Nit.value;
+        this.third.vBusinessName = ct.businessName.value;
+        this.third.vEnable = 1;
+        this.third.idThird = null;
+        //thirdInfo
+        //thirdInfo MAIL_FACTURACION("301002")
+        var thirdInfoEntieMail = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_7__["ThirdInfo"]();
+        thirdInfoEntieMail.idThirdInfioPrimaria = null;
+        thirdInfoEntieMail.vidInfoTypeThird = _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].SeccionCampoMailFacturacion;
+        thirdInfoEntieMail.vidThirdPublic = "";
+        thirdInfoEntieMail.idThird = null;
+        thirdInfoEntieMail.vvalue = ct.EmailFact.value;
+        thirdInfoEntieMail.venable = 1;
+        //thirdInfo DIRECCION_CORRESPONDENCIA("301003")
+        var thirdInfoEntieAddress = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_7__["ThirdInfo"]();
+        thirdInfoEntieAddress.idThirdInfioPrimaria = null;
+        thirdInfoEntieAddress.vidInfoTypeThird = _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].SeccionCampoDireccionCorrespondencia;
+        thirdInfoEntieAddress.vidThirdPublic = "";
+        thirdInfoEntieAddress.idThird = null;
+        thirdInfoEntieAddress.vvalue = ct.Address.value;
+        thirdInfoEntieAddress.venable = 1;
+        //thirdInfo CIUDAD("301004")
+        var thirdInfoCitie = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_7__["ThirdInfo"]();
+        thirdInfoCitie.idThirdInfioPrimaria = null;
+        thirdInfoCitie.vidInfoTypeThird = _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].SeccionCampoCiudad;
+        thirdInfoCitie.vidThirdPublic = "";
+        thirdInfoCitie.idThird = null;
+        thirdInfoCitie.vvalue = ct.Citie.value.codHijo;
+        thirdInfoCitie.venable = 1;
+        this.thirdInfo = [thirdInfoEntieMail, thirdInfoEntieAddress, thirdInfoCitie];
+        //Usuario 
+        var register = new _domain_models_register_register_model__WEBPACK_IMPORTED_MODULE_5__["Register"]();
+        register.user = this.user;
+        register.userInfo = this.userInfo;
+        register.third = this.third;
+        register.thirdInfo = this.thirdInfo;
+        //Todo
+        var rootObject = new _domain_models_register_rootobject_model__WEBPACK_IMPORTED_MODULE_11__["RootObject"]();
+        rootObject.content = register;
+        rootObject.message = null;
+        rootObject.status = null;
+        var builder = new _domain_builders_user_model_builder__WEBPACK_IMPORTED_MODULE_4__["UserBuilder"]()
+            .buildWithuser(this.user)
+            .buildWithuserInfo(this.userInfo)
+            .buildWiththird(this.third)
+            .buildWiththirdInfo(this.thirdInfo)
+            .build();
+        this.serviceRegister.create(builder).subscribe(user => this.mapUser(user));
     }
-    isPersonJuridic(base) {
+    mapUser(base) {
         debugger;
-        var tt = base;
+        this.register = base.content; //Content contiene la informacion del registro con los Ids generados
+        var ListUser = null;
+        var ListThird = null;
+        var RuesThird = null;
+        base.content.userInfo.forEach(element => {
+            if (element.vIdInfoTypeUser == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].SeccionListasUsuario) {
+                ListUser = element.vValue;
+            }
+        });
+        base.content.thirdInfo.forEach(element => {
+            switch (element.vidInfoTypeThird) {
+                case _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].SeccionListasTercero: {
+                    ListThird = element.vvalue;
+                    break;
+                }
+                case _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].SeccionRuesTercero: {
+                    RuesThird = element.vvalue;
+                    break;
+                }
+            }
+        });
+        if (ListUser == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueListasErrorConsulta || ListThird == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueListasErrorConsulta || ListUser == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueListasReportado || ListThird == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueListasReportado) {
+            this.dialog.open(_DialogComponent__WEBPACK_IMPORTED_MODULE_13__["DialogComponent"]).afterClosed().subscribe(result => {
+                this.router.navigate(['']);
+            });
+        }
+        else if (ListUser == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueListasNoReportado && ListThird == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueListasNoReportado) {
+            if (RuesThird == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueRuesInactivo || RuesThird == _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueRuesSinResultado) {
+                this.dialog
+                    .open(_rues_rues_user__WEBPACK_IMPORTED_MODULE_15__["RuesUserComponent"])
+                    .afterClosed()
+                    .subscribe(data => this.isPersonJuridic(data));
+            }
+            switch (RuesThird) {
+                case _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueRuesActivo: {
+                    this.wizard.navigation.goToNextStep();
+                    break;
+                }
+                case _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].ValueRuesErrorConsulta: {
+                    this.dialog.open(_DialogComponent__WEBPACK_IMPORTED_MODULE_13__["DialogComponent"]).afterClosed().subscribe(result => {
+                        this.router.navigate(['']);
+                    });
+                    break;
+                }
+            }
+        }
+    }
+    isPersonJuridic(idActivitie) {
+        debugger;
+        if (idActivitie != 0) {
+            var economicActivity = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_7__["ThirdInfo"]();
+            economicActivity.venable = 1;
+            economicActivity.vidInfoTypeThird = _domain_enums_Catalog_enum__WEBPACK_IMPORTED_MODULE_12__["Catalog"].SeccionActividadEconomica;
+            economicActivity.vidThirdPublic = "1231264";
+            economicActivity.vvalue = idActivitie.toString();
+            this.thirdInfo = [economicActivity];
+            let buildStatus = new _domain_builders_user_model_builder__WEBPACK_IMPORTED_MODULE_4__["UserBuilder"]()
+                .buildWithuser(this.register.user)
+                .buildWithuserInfo(this.register.userInfo)
+                .buildWiththird(this.register.third)
+                .buildWiththirdInfo(this.register.thirdInfo)
+                .buildIdUserThirdPublic(this.register.idUserThirdPublic)
+                .buildStatus("109001")
+                .build();
+            this.statusRegister.create(buildStatus).subscribe(response => console.log(response));
+        }
+        else {
+            window.open("https://www.midatacredito.com", "_blank");
+        }
     }
     /**Servicio para traer ciudades */
     callCities() {
         this.cityCategory.idCategoriaType = "104002";
         this.cityCategory.nombreTree = "Region";
         this.categoryService.create(this.cityCategory).subscribe(response => {
-            //			console.log(response);
-            //			console.log(response.content);
             this.listCities = response.content;
-            //			console.log(this.listCities);
         });
     }
     /**Fin Auto-complete*/
     confirmarContrasena() {
-        // console.log("Register Saved: Print");
-        // console.log(this.register);
-        // console.log(this.password+ " " + this.passwordConf +"Result: "+(this.password == this.passwordConf));
-        // if (this.password == this.passwordConf) { 
-        // 	let buildStatus = new UserBuilder()
-        // 	.buildWithuser(this.register.user)
-        // 	.buildWithuserInfo(this.register.userInfo)
-        // 	.buildWiththird(this.register.third)
-        // 	.buildWiththirdInfo(this.register.thirdInfo)
-        // 	.buildContrasena(this.password)
-        // 	.buildIdUserThirdPublic(this.register.idUserThirdPublic)
-        // 	.buildUsername(this.username)
-        // 	.buildStatus("109003")
-        // 	.build();
-        // this.statusRegister.create(buildStatus).subscribe(response => console.log(response));
-        // }
-        this.wizard.navigation.goToNextStep();
+        console.log("Register Saved: Print");
+        console.log(this.register);
+        console.log(this.password + " " + this.passwordConf + "Result: " + (this.password == this.passwordConf));
+        if (this.password == this.passwordConf) {
+            let buildStatus = new _domain_builders_user_model_builder__WEBPACK_IMPORTED_MODULE_4__["UserBuilder"]()
+                .buildWithuser(this.register.user)
+                .buildWithuserInfo(this.register.userInfo)
+                .buildWiththird(this.register.third)
+                .buildWiththirdInfo(this.register.thirdInfo)
+                .buildContrasena(this.password)
+                .buildIdUserThirdPublic(this.register.idUserThirdPublic)
+                .buildUsername(this.username)
+                .buildStatus("109003")
+                .build();
+            this.statusRegister.create(buildStatus).subscribe(response => console.log(response));
+        }
     }
 };
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('wizard', { read: false, static: false }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", angular_archwizard__WEBPACK_IMPORTED_MODULE_14__["WizardComponent"])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", angular_archwizard__WEBPACK_IMPORTED_MODULE_20__["WizardComponent"])
 ], CreateRegisterComponent.prototype, "wizard", void 0);
 CreateRegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         template: __webpack_require__(/*! raw-loader!./create-user.html */ "./node_modules/raw-loader/index.js!./src/client/app/modules/user/create-user/create-user.html"),
         styles: [__webpack_require__(/*! ./create-user.scss */ "./src/client/app/modules/user/create-user/create-user.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_register_register_provider__WEBPACK_IMPORTED_MODULE_8__["UserToken"])),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](4, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_register_status_provider__WEBPACK_IMPORTED_MODULE_13__["StatusToken"])),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](5, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_register_category_provider__WEBPACK_IMPORTED_MODULE_12__["CategoryToken"])),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], Object, _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"], _angular_router__WEBPACK_IMPORTED_MODULE_9__["Router"], Object, Object])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_register_register_provider__WEBPACK_IMPORTED_MODULE_10__["UserToken"])),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](4, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_register_status_provider__WEBPACK_IMPORTED_MODULE_19__["StatusToken"])),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](5, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_register_category_provider__WEBPACK_IMPORTED_MODULE_18__["CategoryToken"])),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], Object, _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"], _angular_router__WEBPACK_IMPORTED_MODULE_14__["Router"], Object, Object])
 ], CreateRegisterComponent);
 
 
@@ -921,7 +975,7 @@ CreateRegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  height: 200px;\n}\n\nh3 {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9ydWVzL0M6XFxVc2Vyc1xcYzYwNTk1YVxcRG9jdW1lbnRzXFxSZXBvX0Zyb250XFxiZV9wYXJ0bmVyc191aS9zcmNcXGNsaWVudFxcYXBwXFxtb2R1bGVzXFx1c2VyXFxydWVzXFxydWVzLXVzZXIuc2NzcyIsInNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9ydWVzL3J1ZXMtdXNlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtBQ0NKOztBRENBO0VBQ0ksa0JBQUE7QUNFSiIsImZpbGUiOiJzcmMvY2xpZW50L2FwcC9tb2R1bGVzL3VzZXIvcnVlcy9ydWVzLXVzZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImltZyB7XHJcbiAgICBoZWlnaHQ6IDIwMHB4O1xyXG59XHJcbmgzIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufSIsImltZyB7XG4gIGhlaWdodDogMjAwcHg7XG59XG5cbmgzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+module.exports = "img {\n  height: 200px;\n}\n\n.title {\n  text-align: center;\n}\n\n.home-registration-form {\n  box-shadow: 1px 1px 3px 0px #000000;\n  border-radius: 0px;\n}\n\n.content {\n  font-family: \"montserrat\", sans-serif;\n  margin: 10px 100px 10px 100px;\n}\n\nimg {\n  height: 40px;\n  display: flex;\n  margin: 0 auto;\n  margin-top: 20px;\n}\n\nh3 {\n  font-size: 13px;\n}\n\nh2 {\n  font-size: 23px;\n}\n\n.cdk-overlay-pane {\n  max-width: 55vw;\n}\n\n.content {\n  margin: 0px;\n}\n\n.home-registration-form {\n  padding: 10px;\n}\n\n.textContent {\n  text-align: center;\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\nform {\n  height: 300px;\n}\n\nbutton {\n  background-color: #B7BF10;\n  color: white;\n  font-weight: bolder;\n  width: 200px;\n}\n\n.form-control {\n  font-size: 11px;\n}\n\nbutton:hover {\n  background-color: #D6DF0D;\n}\n\n.search-activitie {\n  width: 100%;\n  margin: auto;\n  display: block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9ydWVzL0M6XFxVc2Vyc1xcYzYwNTk1YVxcRG9jdW1lbnRzXFxSZXBvX0Zyb250XFxiZV9wYXJ0bmVyc191aS9zcmNcXGNsaWVudFxcYXBwXFxtb2R1bGVzXFx1c2VyXFxydWVzXFxydWVzLXVzZXIuc2NzcyIsInNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9ydWVzL3J1ZXMtdXNlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtBQ0NKOztBRENBO0VBQ0ksa0JBQUE7QUNFSjs7QURFQTtFQUNJLG1DQUFBO0VBQ0Esa0JBQUE7QUNDSjs7QURDQTtFQUNJLHFDQUFBO0VBQ0EsNkJBQUE7QUNFSjs7QURBQTtFQUVJLFlBQUE7RUFDQSxhQUFBO0VBQ0YsY0FBQTtFQUNBLGdCQUFBO0FDRUY7O0FEQUE7RUFFSSxlQUFBO0FDRUo7O0FEQUE7RUFDSSxlQUFBO0FDR0o7O0FEREE7RUFFSSxlQUFBO0FDR0o7O0FEREE7RUFFSSxXQUFBO0FDR0o7O0FEREE7RUFDSSxhQUFBO0FDSUo7O0FERkE7RUFFSSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsbUJBQUE7QUNJSjs7QURGQTtFQUVJLGFBQUE7QUNJSjs7QURGQTtFQUVJLHlCQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtBQ0lKOztBREZBO0VBQ0ksZUFBQTtBQ0tKOztBREhBO0VBQWMseUJBQUE7QUNPZDs7QURMQTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtBQ1FKIiwiZmlsZSI6InNyYy9jbGllbnQvYXBwL21vZHVsZXMvdXNlci9ydWVzL3J1ZXMtdXNlci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW1nIHtcclxuICAgIGhlaWdodDogMjAwcHg7XHJcbn1cclxuLnRpdGxlIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIFxyXG59XHJcblxyXG4uaG9tZS1yZWdpc3RyYXRpb24tZm9ybSB7XHJcbiAgICBib3gtc2hhZG93OiAxcHggMXB4IDNweCAwcHggIzAwMDAwMDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDBweDtcclxufVxyXG4uY29udGVudHtcclxuICAgIGZvbnQtZmFtaWx5OiAnbW9udHNlcnJhdCcsc2Fucy1zZXJpZjtcclxuICAgIG1hcmdpbjogMTBweCAxMDBweCAxMHB4IDEwMHB4O1xyXG59XHJcbmltZ1xyXG57XHJcbiAgICBoZWlnaHQ6IDQwcHg7XHJcbiAgICBkaXNwbGF5OmZsZXg7XHJcbiAgbWFyZ2luOjAgYXV0bztcclxuICBtYXJnaW4tdG9wOiAyMHB4O1xyXG59XHJcbmgzXHJcbntcclxuICAgIGZvbnQtc2l6ZTogMTNweDtcclxufVxyXG5oMntcclxuICAgIGZvbnQtc2l6ZTogMjNweDtcclxufVxyXG4uY2RrLW92ZXJsYXktcGFuZVxyXG57XHJcbiAgICBtYXgtd2lkdGg6IDU1dnc7XHJcbn1cclxuLmNvbnRlbnRcclxue1xyXG4gICAgbWFyZ2luOiAwcHhcclxufVxyXG4uaG9tZS1yZWdpc3RyYXRpb24tZm9ybSB7XHJcbiAgICBwYWRkaW5nOiAxMHB4O1xyXG59XHJcbi50ZXh0Q29udGVudFxyXG57XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweFxyXG59XHJcbmZvcm1cclxue1xyXG4gICAgaGVpZ2h0OiAzMDBweFxyXG59XHJcbmJ1dHRvblxyXG57XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjQjdCRjEwO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICAgIHdpZHRoOiAyMDBweDtcclxufVxyXG4uZm9ybS1jb250cm9sIHtcclxuICAgIGZvbnQtc2l6ZTogMTFweDtcclxufVxyXG5idXR0b246aG92ZXIge2JhY2tncm91bmQtY29sb3I6I0Q2REYwRH1cclxuXHJcbi5zZWFyY2gtYWN0aXZpdGlle1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICB9IiwiaW1nIHtcbiAgaGVpZ2h0OiAyMDBweDtcbn1cblxuLnRpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaG9tZS1yZWdpc3RyYXRpb24tZm9ybSB7XG4gIGJveC1zaGFkb3c6IDFweCAxcHggM3B4IDBweCAjMDAwMDAwO1xuICBib3JkZXItcmFkaXVzOiAwcHg7XG59XG5cbi5jb250ZW50IHtcbiAgZm9udC1mYW1pbHk6IFwibW9udHNlcnJhdFwiLCBzYW5zLXNlcmlmO1xuICBtYXJnaW46IDEwcHggMTAwcHggMTBweCAxMDBweDtcbn1cblxuaW1nIHtcbiAgaGVpZ2h0OiA0MHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBtYXJnaW46IDAgYXV0bztcbiAgbWFyZ2luLXRvcDogMjBweDtcbn1cblxuaDMge1xuICBmb250LXNpemU6IDEzcHg7XG59XG5cbmgyIHtcbiAgZm9udC1zaXplOiAyM3B4O1xufVxuXG4uY2RrLW92ZXJsYXktcGFuZSB7XG4gIG1heC13aWR0aDogNTV2dztcbn1cblxuLmNvbnRlbnQge1xuICBtYXJnaW46IDBweDtcbn1cblxuLmhvbWUtcmVnaXN0cmF0aW9uLWZvcm0ge1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG4udGV4dENvbnRlbnQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG5cbmZvcm0ge1xuICBoZWlnaHQ6IDMwMHB4O1xufVxuXG5idXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjQjdCRjEwO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtd2VpZ2h0OiBib2xkZXI7XG4gIHdpZHRoOiAyMDBweDtcbn1cblxuLmZvcm0tY29udHJvbCB7XG4gIGZvbnQtc2l6ZTogMTFweDtcbn1cblxuYnV0dG9uOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0Q2REYwRDtcbn1cblxuLnNlYXJjaC1hY3Rpdml0aWUge1xuICB3aWR0aDogMTAwJTtcbiAgbWFyZ2luOiBhdXRvO1xuICBkaXNwbGF5OiBibG9jaztcbn0iXX0= */"
 
 /***/ }),
 
@@ -939,24 +993,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _domain_models_register_commerceentity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../domain/models/register/commerceentity */ "./src/domain/models/register/commerceentity.ts");
+/* harmony import */ var _services_register_catalog_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../services/register/catalog.provider */ "./src/client/app/services/register/catalog.provider.ts");
+/* harmony import */ var _domain_models_register_catalog_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../domain/models/register/catalog.model */ "./src/domain/models/register/catalog.model.ts");
+
+
 
 
 
 
 let RuesUserComponent = class RuesUserComponent {
-    constructor(dialogRef) {
-        /**Listas de las 23 categorias */
-        //			console.log(this.commerceEntity.list);
+    constructor(dialogRef, serviceRegister) {
         this.dialogRef = dialogRef;
+        this.serviceRegister = serviceRegister;
+        this.fromActivitie = true;
         this.commerceEntity = new _domain_models_register_commerceentity__WEBPACK_IMPORTED_MODULE_3__["CommerceEntity"]();
     }
     ngOnInit() {
+        /**Listas de las 23 categorias */
+        debugger;
+        var catalogEntie = new _domain_models_register_catalog_model__WEBPACK_IMPORTED_MODULE_5__["catalog"]();
+        catalogEntie.catalogId = "112";
+        this.serviceRegister.create(catalogEntie).subscribe(response => {
+            debugger;
+            this.listActivities = response.content;
+        });
     }
     isPersonJuridic() {
-        this.dialogRef.close(true);
+        this.dialogRef.close(this.idActivitie);
     }
     isPersonNatu() {
-        this.dialogRef.close(false);
+        this.dialogRef.close(0);
     }
 };
 RuesUserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -964,7 +1030,8 @@ RuesUserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: __webpack_require__(/*! raw-loader!./rues-user.html */ "./node_modules/raw-loader/index.js!./src/client/app/modules/user/rues/rues-user.html"),
         styles: [__webpack_require__(/*! ./rues-user.scss */ "./src/client/app/modules/user/rues/rues-user.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"]])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_register_catalog_provider__WEBPACK_IMPORTED_MODULE_4__["CatalogToken"])),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"], Object])
 ], RuesUserComponent);
 
 
@@ -988,20 +1055,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_register_status_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/register/status.provider */ "./src/client/app/services/register/status.provider.ts");
 /* harmony import */ var _services_register_category_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/register/category.service */ "./src/client/app/services/register/category.service.ts");
 /* harmony import */ var _services_register_category_provider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../services/register/category.provider */ "./src/client/app/services/register/category.provider.ts");
-/* harmony import */ var _services_register_register_provider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../services/register/register.provider */ "./src/client/app/services/register/register.provider.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm2015/input.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-/* harmony import */ var _create_user_create_user__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./create-user/create-user */ "./src/client/app/modules/user/create-user/create-user.ts");
-/* harmony import */ var angular_archwizard__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! angular-archwizard */ "./node_modules/angular-archwizard/fesm2015/angular-archwizard.js");
-/* harmony import */ var _layout_layout_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../layout/layout.module */ "./src/client/app/layout/layout.module.ts");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
-/* harmony import */ var _create_user_DialogComponent__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./create-user/DialogComponent */ "./src/client/app/modules/user/create-user/DialogComponent.ts");
-/* harmony import */ var _rues_rues_user__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./rues/rues-user */ "./src/client/app/modules/user/rues/rues-user.ts");
+/* harmony import */ var _services_register_catalog_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../services/register/catalog.service */ "./src/client/app/services/register/catalog.service.ts");
+/* harmony import */ var _services_register_catalog_provider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../services/register/catalog.provider */ "./src/client/app/services/register/catalog.provider.ts");
+/* harmony import */ var _services_register_register_provider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../services/register/register.provider */ "./src/client/app/services/register/register.provider.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm2015/input.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var _create_user_create_user__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./create-user/create-user */ "./src/client/app/modules/user/create-user/create-user.ts");
+/* harmony import */ var angular_archwizard__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! angular-archwizard */ "./node_modules/angular-archwizard/fesm2015/angular-archwizard.js");
+/* harmony import */ var _layout_layout_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../layout/layout.module */ "./src/client/app/layout/layout.module.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
+/* harmony import */ var _create_user_DialogComponent__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./create-user/DialogComponent */ "./src/client/app/modules/user/create-user/DialogComponent.ts");
+/* harmony import */ var _rues_rues_user__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./rues/rues-user */ "./src/client/app/modules/user/rues/rues-user.ts");
 
 
 
@@ -1013,6 +1082,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /*Category Contrase�a**/
+/*Catalogo**/
+
+
+/*Catalogo**/
 
 
 
@@ -1034,36 +1107,39 @@ RegisterModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         providers: [
             _services_register_register_service__WEBPACK_IMPORTED_MODULE_2__["RegisterService"],
-            new _services_register_register_provider__WEBPACK_IMPORTED_MODULE_7__["RegisterProvider"](),
+            new _services_register_register_provider__WEBPACK_IMPORTED_MODULE_9__["RegisterProvider"](),
             _services_register_status_service__WEBPACK_IMPORTED_MODULE_3__["StatusService"],
             new _services_register_status_provider__WEBPACK_IMPORTED_MODULE_4__["StatusProvider"]() /**Contrase�a */,
             _services_register_category_service__WEBPACK_IMPORTED_MODULE_5__["CategoryService"],
-            new _services_register_category_provider__WEBPACK_IMPORTED_MODULE_6__["CategoryProvider"]() /**Category */
+            new _services_register_category_provider__WEBPACK_IMPORTED_MODULE_6__["CategoryProvider"]() /**Category */,
+            _services_register_catalog_service__WEBPACK_IMPORTED_MODULE_7__["CatalogService"],
+            new _services_register_catalog_provider__WEBPACK_IMPORTED_MODULE_8__["CatalogProvider"]() /**Catalog */
         ],
         imports: [
-            _angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_12__["MatButtonModule"],
-            _angular_material_input__WEBPACK_IMPORTED_MODULE_11__["MatInputModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_12__["MatCheckboxModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"],
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__["BrowserModule"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__["BrowserAnimationsModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_12__["MatExpansionModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_12__["MatSlideToggleModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_12__["MatIconModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_12__["MatSnackBarModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_12__["MatDialogModule"],
-            angular_archwizard__WEBPACK_IMPORTED_MODULE_16__["ArchwizardModule"],
-            _layout_layout_module__WEBPACK_IMPORTED_MODULE_17__["LayoutModule"],
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__["NgbModule"]
+            _angular_common__WEBPACK_IMPORTED_MODULE_10__["CommonModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_11__["ReactiveFormsModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonModule"],
+            _angular_material_input__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"],
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_15__["BrowserModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_16__["BrowserAnimationsModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSlideToggleModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatIconModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSnackBarModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDialogModule"],
+            angular_archwizard__WEBPACK_IMPORTED_MODULE_18__["ArchwizardModule"],
+            _layout_layout_module__WEBPACK_IMPORTED_MODULE_19__["LayoutModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatAutocompleteModule"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__["NgbModule"]
         ],
         declarations: [
-            _create_user_create_user__WEBPACK_IMPORTED_MODULE_15__["CreateRegisterComponent"], _create_user_DialogComponent__WEBPACK_IMPORTED_MODULE_19__["DialogComponent"], _rues_rues_user__WEBPACK_IMPORTED_MODULE_20__["RuesUserComponent"]
+            _create_user_create_user__WEBPACK_IMPORTED_MODULE_17__["CreateRegisterComponent"], _create_user_DialogComponent__WEBPACK_IMPORTED_MODULE_21__["DialogComponent"], _rues_rues_user__WEBPACK_IMPORTED_MODULE_22__["RuesUserComponent"]
         ],
         exports: [],
-        entryComponents: [_create_user_create_user__WEBPACK_IMPORTED_MODULE_15__["CreateRegisterComponent"], _create_user_DialogComponent__WEBPACK_IMPORTED_MODULE_19__["DialogComponent"], _rues_rues_user__WEBPACK_IMPORTED_MODULE_20__["RuesUserComponent"]]
+        entryComponents: [_create_user_create_user__WEBPACK_IMPORTED_MODULE_17__["CreateRegisterComponent"], _create_user_DialogComponent__WEBPACK_IMPORTED_MODULE_21__["DialogComponent"], _rues_rues_user__WEBPACK_IMPORTED_MODULE_22__["RuesUserComponent"]]
     })
 ], RegisterModule);
 
@@ -1107,6 +1183,72 @@ InterceptorHttp = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], InterceptorHttp);
+
+
+
+/***/ }),
+
+/***/ "./src/client/app/services/register/catalog.provider.ts":
+/*!**************************************************************!*\
+  !*** ./src/client/app/services/register/catalog.provider.ts ***!
+  \**************************************************************/
+/*! exports provided: CatalogToken, CatalogProvider */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CatalogToken", function() { return CatalogToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CatalogProvider", function() { return CatalogProvider; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _catalog_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./catalog.service */ "./src/client/app/services/register/catalog.service.ts");
+
+
+const CatalogToken = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('catalog.service');
+class CatalogProvider {
+    constructor() {
+        this.provide = CatalogToken;
+        this.deps = [_catalog_service__WEBPACK_IMPORTED_MODULE_1__["CatalogService"]];
+        this.multi = false;
+        this.useFactory = (...deps) => {
+            return deps[0];
+        };
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/client/app/services/register/catalog.service.ts":
+/*!*************************************************************!*\
+  !*** ./src/client/app/services/register/catalog.service.ts ***!
+  \*************************************************************/
+/*! exports provided: CatalogService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CatalogService", function() { return CatalogService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let CatalogService = class CatalogService {
+    constructor(http) {
+        this.http = http;
+    }
+    create(catalog) {
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/categorias/catalog/ `, catalog);
+        // .post<Register>(`${AppSettings.Core().EndPoints.API}/userthird/create`, register);
+        //   debugger
+        return request;
+    }
+};
+CatalogService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+], CatalogService);
 
 
 
@@ -1163,7 +1305,7 @@ let CategoryService = class CategoryService {
         this.http = http;
     }
     create(categoryRequest) {
-        var request = this.http.post(`http://localhost:8080/servicebroker/v1/catalog/categorias/consulta/`, categoryRequest);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/categorias/consulta/`, categoryRequest);
         // .post<Register>(`${AppSettings.Core().EndPoints.API}/userthird/create`, register);
         //   debugger
         return request;
@@ -1230,7 +1372,7 @@ let RegisterService = class RegisterService {
         this.http = http;
     }
     create(register) {
-        var request = this.http.post(`http://localhost:8080/servicebroker/v1/catalog/register/send/`, register);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/register/send/`, register);
         // .post<Register>(`${AppSettings.Core().EndPoints.API}/userthird/create`, register);
         return request;
     }
@@ -1295,7 +1437,7 @@ let StatusService = class StatusService {
         this.http = http;
     }
     create(registerStatus) {
-        var request = this.http.post(`http://localhost:8080/servicebroker/v1/catalog/register/status/`, registerStatus);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/register/status/`, registerStatus);
         // .post<Register>(`${AppSettings.Core().EndPoints.API}/userthird/create`, register);
         //   debugger
         return request;
@@ -1423,6 +1565,116 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
     }
     window['ngRef'] = ref;
 }).catch(err => console.error(err));
+
+
+/***/ }),
+
+/***/ "./src/domain/builders/user.model.builder.ts":
+/*!***************************************************!*\
+  !*** ./src/domain/builders/user.model.builder.ts ***!
+  \***************************************************/
+/*! exports provided: UserBuilder */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserBuilder", function() { return UserBuilder; });
+/* harmony import */ var _models_register_register_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/register/register.model */ "./src/domain/models/register/register.model.ts");
+
+class UserBuilder {
+    build() {
+        const register = new _models_register_register_model__WEBPACK_IMPORTED_MODULE_0__["Register"]();
+        register.user = this.user;
+        register.userInfo = this.userInfo;
+        register.third = this.third;
+        register.thirdInfo = this.thirdInfo;
+        register.status = this.status;
+        register.contrasena = this.contrasena;
+        register.username = this.username;
+        register.idUserThirdPublic = this.idUserThirdPublic;
+        return register;
+    }
+    buildWithuser(user) {
+        this.user = user;
+        return this;
+    }
+    buildWithuserInfo(userInfo) {
+        this.userInfo = userInfo;
+        return this;
+    }
+    buildWiththird(third) {
+        this.third = third;
+        return this;
+    }
+    buildWiththirdInfo(thirdInfo) {
+        this.thirdInfo = thirdInfo;
+        return this;
+    }
+    buildStatus(status) {
+        this.status = status;
+        return this;
+    }
+    buildContrasena(contrasena) {
+        this.contrasena = contrasena;
+        return this;
+    }
+    buildUsername(username) {
+        this.username = username;
+        return this;
+    }
+    buildIdUserThirdPublic(idUserThirdPublic) {
+        this.idUserThirdPublic = idUserThirdPublic;
+        return this;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/domain/enums/Catalog.enum.ts":
+/*!******************************************!*\
+  !*** ./src/domain/enums/Catalog.enum.ts ***!
+  \******************************************/
+/*! exports provided: Catalog */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Catalog", function() { return Catalog; });
+var Catalog;
+(function (Catalog) {
+    Catalog["ValueListasReportado"] = "102001";
+    Catalog["ValueListasNoReportado"] = "102002";
+    Catalog["ValueListasErrorConsulta"] = "102003";
+    Catalog["SeccionCampoMailFacturacion"] = "301002";
+    Catalog["SeccionCampoDireccionCorrespondencia"] = "301003";
+    Catalog["SeccionCampoCiudad"] = "301004";
+    Catalog["SeccionListasTercero"] = "301006";
+    Catalog["SeccionListasUsuario"] = "201001";
+    Catalog["SeccionRuesTercero"] = "301007";
+    Catalog["Anonimo"] = "232323";
+    Catalog["ValueRuesActivo"] = "105001";
+    Catalog["ValueRuesInactivo"] = "105002";
+    Catalog["ValueRuesSinResultado"] = "105003";
+    Catalog["ValueRuesErrorConsulta"] = "105004";
+    Catalog["SeccionActividadEconomica"] = "301013";
+})(Catalog || (Catalog = {}));
+
+
+/***/ }),
+
+/***/ "./src/domain/models/register/catalog.model.ts":
+/*!*****************************************************!*\
+  !*** ./src/domain/models/register/catalog.model.ts ***!
+  \*****************************************************/
+/*! exports provided: catalog */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "catalog", function() { return catalog; });
+class catalog {
+}
 
 
 /***/ }),
@@ -1571,6 +1823,22 @@ class Register {
 
 /***/ }),
 
+/***/ "./src/domain/models/register/rootobject.model.ts":
+/*!********************************************************!*\
+  !*** ./src/domain/models/register/rootobject.model.ts ***!
+  \********************************************************/
+/*! exports provided: RootObject */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RootObject", function() { return RootObject; });
+class RootObject {
+}
+
+
+/***/ }),
+
 /***/ "./src/domain/models/register/third.model.ts":
 /*!***************************************************!*\
   !*** ./src/domain/models/register/third.model.ts ***!
@@ -1614,6 +1882,22 @@ class ThirdInfo {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "User", function() { return User; });
 class User {
+}
+
+
+/***/ }),
+
+/***/ "./src/domain/models/register/userInfo.model.ts":
+/*!******************************************************!*\
+  !*** ./src/domain/models/register/userInfo.model.ts ***!
+  \******************************************************/
+/*! exports provided: UserInfo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserInfo", function() { return UserInfo; });
+class UserInfo {
 }
 
 
