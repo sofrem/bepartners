@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-lg-2\">Score</div>\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-lg-12\">\r\n\t\t\t<div class=\"row\">\r\n\t\t\t\t<div class=\"col-lg-8\">\r\n\t\t\t\t\t<h2>{{third.vBusinessName}}</h2>\r\n\t\t\t\t\t<h3>Nit: {{third.vIdentificationNumber}}</h3>\r\n\t\t\t\t\t<h2>{{twitter.vvalue}}</h2>\r\n\t\t\t\t\t<h2>{{instagram.vvalue}}</h2>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-4\">\r\n\t\t\t\t\t<h2>{{paginaWeb.vvalue}}</h2>\r\n\t\t\t\t\t<h2>{{direccionComercial.vvalue}}</h2>\r\n\t\t\t\t\t<h2>{{telefono.vvalue}}</h2>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-lg-12\">\r\n\t\t\t<h2>Informaci�n adicional</h2>\r\n\t\t\t<h3>Sobre {{third.vBusinessName}}</h3>\r\n\t\t\t<p>{{descripcionEmpresa.vvalue}}</p>\r\n\t\t\t<h3>Actividad econ�mica</h3>\r\n\t\t\t<select class=\"browser-default custom-select\">\r\n\t\t\t\t<option selected>Seleccion</option>\r\n\t\t\t\t<option value=\"1\">Se listaran las actividades economicas</option>\r\n\t\t\t</select>\r\n\t\t</div>\r\n\t</div>\r\n\t<br />\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-lg-6\">\r\n\t\t\t<h2>Sucursales</h2>\r\n\t\t\t<div *ngFor=\"let branchModel of branchModels\">\r\n\t\t\t\t<h3>{{branchModel.branch.vName}}</h3>\r\n\t\t\t\t<div *ngFor=\"let branchInfo of branchModel.branchInfos\">\r\n\t\t\t\t\t<div>{{(branchInfo.vIdInfoTypeBranch == typeBranchDir) ? branchInfo.vValue : ''}}</div>\r\n\t\t\t\t\t<div>{{(branchInfo.vIdInfoTypeBranch == typeBranchTel) ? branchInfo.vValue : ''}}</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-lg-6\">\r\n\t\t\t<h2>Productos y Servicios</h2>\r\n\t\t\t<div *ngFor=\"let serviceModel of servicesModels\">\r\n\t\t\t\t<div *ngFor=\"let serviceInfo of serviceModel.servicesInfos\">\r\n\t\t\t\t\t<div>{{serviceInfo.vValue}}</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-lg-2\">\r\n\t\t\t<img src=\"\" alt=\"\" />\r\n\t\t</div>\r\n\t\t<div class=\"col-lg-10\">\r\n\t\t\t<h2>�Quien es tu representante legal y accionastas ?</h2>\r\n\t\t\t<br />\r\n\t\t\t<h3>Completa este formato para mejorar tu perfil e indicador de confianza</h3>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-lg-2\">\r\n\t\t\t<img src=\"\" alt=\"\" />\r\n\t\t</div>\r\n\t\t<div class=\"col-lg-10\">\r\n\t\t\t<h2>�Cual es el estado financiero de tu empresa?</h2>\r\n\t\t\t<br />\r\n\t\t\t<h3>Completa este formato para mejorar tu perfil e indicador de confianza</h3>\r\n\t\t</div>\r\n\t</div>"
+module.exports = "<section class=\"section pt-5\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row margin-t-50\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<div class=\"text-center pricing-box bg-white hover-effect price-active\" style=\"padding: 0px;\">\r\n\t\t\t\t\t<div class=\"text-center pricing-box topHead\" style=\"background-color: #00b2a9\">\r\n\t\t\t\t\t\t<h1 class=\"section-title text-center\">{{third.vBusinessName}}</h1>\r\n\t\t\t\t\t\t<h2 class=\"text-center\">Nit: {{third.vIdentificationNumber}}</h2>\r\n\t\t\t\t\t\t<h2 class=\"text-center\">{{ciudadMunicipio.vIdentificationNumber}}</h2>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-8\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\">{{correoElectronico.vvalue}}</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-4\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\"></div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-8\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\">{{paginaWeb.vvalue}}</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-4\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\"></div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-8\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\">{{facebook.vvalue}}</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-4\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\">{{telefono.vvalue}}</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-8\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\">{{instagram.vvalue}}</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-4\">\r\n\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"col-lg-10\">{{direccionComercial.vvalue}}</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</section>\r\n\r\n<section class=\"section pt-5\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row margin-t-50\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<div class=\"text-center pricing-box bg-white hover-effect price-active\" style=\"padding: 0px;\">\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h1>Informaci�n adicional</h1>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h2>Sobre {{third.vBusinessName}}</h2>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<p>{{descripcionEmpresa.vvalue}}</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h3>Actividad econ�mica</h3>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<select class=\"browser-default custom-select\">\r\n\t\t\t\t\t\t\t\t<option selected>Seleccion</option>\r\n\t\t\t\t\t\t\t\t<option value=\"1\">Se listaran las actividades economicas</option>\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</section>\r\n\r\n<section class=\"section pt-5\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row margin-t-50\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<div class=\"text-center pricing-box bg-white hover-effect price-active\" style=\"padding: 0px;\">\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h1>Sucursales</h1>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div *ngFor=\"let branchModel of branchModels\">\r\n\t\t\t\t\t\t<h3>{{branchModel.branch.vName}}</h3>\r\n\t\t\t\t\t\t<div *ngFor=\"let branchInfo of branchModel.branchInfos\">\r\n\t\t\t\t\t\t\t<div>{{(branchInfo.vIdInfoTypeBranch == typeBranchDir) ? branchInfo.vValue : ''}}</div>\r\n\t\t\t\t\t\t\t<div>{{(branchInfo.vIdInfoTypeBranch == typeBranchTel) ? branchInfo.vValue : ''}}</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</section>\r\n\r\n<section class=\"section pt-5\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row margin-t-50\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<div class=\"text-center pricing-box bg-white hover-effect price-active\" style=\"padding: 0px;\">\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h1>Productos y Servicios</h1>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div *ngFor=\"let serviceModel of servicesModels\">\r\n\t\t\t\t\t\t<div *ngFor=\"let serviceInfo of serviceModel.servicesInfos\">\r\n\t\t\t\t\t\t\t<div>{{serviceInfo.vValue}}</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</section>\r\n\r\n\r\n\r\n<section class=\"section pt-5\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row margin-t-50\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<div class=\"text-center pricing-box bg-white hover-effect price-active\" style=\"padding: 0px;\">\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h1>�Quien es tu representante legal y accionastas ?</h1>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h2>Completa este formato para mejorar tu perfil e indicador de confianza</h2>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</section>\r\n\r\n<section class=\"section pt-5\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row margin-t-50\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<div class=\"text-center pricing-box bg-white hover-effect price-active\" style=\"padding: 0px;\">\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t\t\t<img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h1>�Cual es el estado financiero de tu empresa?</h1>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t\t\t<h2>Completa este formato para mejorar tu perfil e indicador de confianza</h2>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</section>\r\n\r\n"
 
 /***/ }),
 
@@ -108,6 +108,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _domain_enums_CatalogThirdInfoProfileEnum__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../domain/enums/CatalogThirdInfoProfileEnum */ "./src/domain/enums/CatalogThirdInfoProfileEnum.ts");
 /* harmony import */ var _domain_enums_CatalogBranchInfoEnum__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../../domain/enums/CatalogBranchInfoEnum */ "./src/domain/enums/CatalogBranchInfoEnum.ts");
 /* harmony import */ var _services_profile_profilebasic_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../services/profile/profilebasic.service */ "./src/client/app/services/profile/profilebasic.service.ts");
+/* harmony import */ var _domain_models_profile_service_model__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../domain/models/profile/service.model */ "./src/domain/models/profile/service.model.ts");
+/* harmony import */ var _domain_models_profile_serviceinfo_model__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../../domain/models/profile/serviceinfo.model */ "./src/domain/models/profile/serviceinfo.model.ts");
+/* harmony import */ var _domain_models_profile_branch_model__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../../domain/models/profile/branch.model */ "./src/domain/models/profile/branch.model.ts");
+/* harmony import */ var _domain_models_profile_branchinfo_model__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../domain/models/profile/branchinfo.model */ "./src/domain/models/profile/branchinfo.model.ts");
+
+
+
+
 
 
 
@@ -130,14 +138,70 @@ let DetailProfileComponent = class DetailProfileComponent {
         this.direccionComercial = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
         this.twitter = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
         this.instagram = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
+        this.facebook = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
         this.telefono = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
         this.actividadEconomica = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
         this.descripcionEmpresa = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
-        this.socialReason = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
+        this.ciudadMunicipio = new _domain_models_register_thirdInfo_model__WEBPACK_IMPORTED_MODULE_6__["ThirdInfo"]();
         this.userProfileRequest = this.loadSessionProfile();
         this.typeBranchTel = _domain_enums_CatalogBranchInfoEnum__WEBPACK_IMPORTED_MODULE_8__["CatalogBranchInfoEnum"].TELEFONO;
         this.typeBranchDir = _domain_enums_CatalogBranchInfoEnum__WEBPACK_IMPORTED_MODULE_8__["CatalogBranchInfoEnum"].DIRECCION;
-        this.callBasicInformation();
+        //		this.callBasicInformation();
+        this.loadObject();
+    }
+    loadObject() {
+        this.third.vBusinessName = "DENTISALUD SAS";
+        this.third.vIdentificationNumber = "900415240";
+        this.ciudadMunicipio.vvalue = "Bogota";
+        this.paginaWeb.vvalue = "www.dentisalud.com.co";
+        this.correoElectronico.vvalue = "gerencia@dentisalud.com";
+        this.direccionComercial.vvalue = "Calle 92#7 - 25";
+        this.twitter.vvalue = "@dentisalud";
+        this.instagram.vvalue = "@dentisalud";
+        this.facebook.vvalue = "@dentisalud";
+        this.telefono.vvalue = "300415685";
+        this.descripcionEmpresa.vvalue = "Somos una compa�ia dedicada a ofrecer servicios de salud oral en la ciudad de Bogota, contamos con dos sedes en el Norte de Bogota y mas de 15 especialidades.";
+        var service_a = new _domain_models_profile_service_model__WEBPACK_IMPORTED_MODULE_10__["Service"]();
+        var serviceI_a = new _domain_models_profile_serviceinfo_model__WEBPACK_IMPORTED_MODULE_11__["ServiceInfo"]();
+        serviceI_a.vValue = "Salud Oral";
+        var serviceI_b = new _domain_models_profile_serviceinfo_model__WEBPACK_IMPORTED_MODULE_11__["ServiceInfo"]();
+        serviceI_b.vValue = "Dental";
+        var serviceI_c = new _domain_models_profile_serviceinfo_model__WEBPACK_IMPORTED_MODULE_11__["ServiceInfo"]();
+        serviceI_c.vValue = "Cirugia";
+        var serviceI_d = new _domain_models_profile_serviceinfo_model__WEBPACK_IMPORTED_MODULE_11__["ServiceInfo"]();
+        serviceI_d.vValue = "Tratamientos";
+        this.servicesModels = [
+            {
+                service: service_a,
+                serviceInfos: [serviceI_a, serviceI_b, serviceI_c, serviceI_d]
+            }
+        ];
+        var branc_a = new _domain_models_profile_branch_model__WEBPACK_IMPORTED_MODULE_12__["Branch"]();
+        branc_a.vName = "Chapinero";
+        var branchIA_a = new _domain_models_profile_branchinfo_model__WEBPACK_IMPORTED_MODULE_13__["BranchInfo"]();
+        branchIA_a.vValue = "Calle 63# 13 - 22";
+        branchIA_a.vIdInfoTypeBranch = "303002";
+        var branchIA_b = new _domain_models_profile_branchinfo_model__WEBPACK_IMPORTED_MODULE_13__["BranchInfo"]();
+        branchIA_b.vValue = "3004523652";
+        branchIA_b.vIdInfoTypeBranch = "303003";
+        var branc_b = new _domain_models_profile_branch_model__WEBPACK_IMPORTED_MODULE_12__["Branch"]();
+        branc_b.vName = "Chapinero";
+        var branchIB_a = new _domain_models_profile_branchinfo_model__WEBPACK_IMPORTED_MODULE_13__["BranchInfo"]();
+        branchIB_a.vValue = "Calle 63# 13 - 22";
+        branchIB_a.vIdInfoTypeBranch = "303002";
+        var branchIB_b = new _domain_models_profile_branchinfo_model__WEBPACK_IMPORTED_MODULE_13__["BranchInfo"]();
+        branchIB_b.vValue = "3004523652";
+        branchIB_b.vIdInfoTypeBranch = "303003";
+        this.branchModels = [
+            {
+                branch: branc_a,
+                branchInfos: [branchIA_a, branchIA_b]
+            },
+            {
+                branch: branc_b,
+                branchInfos: [branchIB_a, branchIB_b]
+            }
+        ];
     }
     loadSessionProfile() {
         let userProfileRequest = new _domain_models_profile_profilerequest_model__WEBPACK_IMPORTED_MODULE_3__["ProfileRequest"]();
@@ -171,10 +235,6 @@ let DetailProfileComponent = class DetailProfileComponent {
         this.score = profileBasicResponse.score;
         profileBasicResponse.thirdInfos.forEach(thirdInfo => {
             switch (thirdInfo.vidInfoTypeThird) {
-                case _domain_enums_CatalogThirdInfoProfileEnum__WEBPACK_IMPORTED_MODULE_7__["CatalogThirdInfoProfileEnum"].RAZON_SOCIAL_NOMBRE: {
-                    this.socialReason = thirdInfo;
-                    break;
-                }
                 case _domain_enums_CatalogThirdInfoProfileEnum__WEBPACK_IMPORTED_MODULE_7__["CatalogThirdInfoProfileEnum"].PAGINA_WEB: {
                     this.paginaWeb = thirdInfo;
                     break;
@@ -191,6 +251,10 @@ let DetailProfileComponent = class DetailProfileComponent {
                     this.twitter = thirdInfo;
                     break;
                 }
+                case _domain_enums_CatalogThirdInfoProfileEnum__WEBPACK_IMPORTED_MODULE_7__["CatalogThirdInfoProfileEnum"].FACEBOOK: {
+                    this.facebook = thirdInfo;
+                    break;
+                }
                 case _domain_enums_CatalogThirdInfoProfileEnum__WEBPACK_IMPORTED_MODULE_7__["CatalogThirdInfoProfileEnum"].INSTAGRAM: {
                     this.instagram = thirdInfo;
                     break;
@@ -205,6 +269,10 @@ let DetailProfileComponent = class DetailProfileComponent {
                 }
                 case _domain_enums_CatalogThirdInfoProfileEnum__WEBPACK_IMPORTED_MODULE_7__["CatalogThirdInfoProfileEnum"].DESCRIPCION_DE_LA_EMPRESA: {
                     this.descripcionEmpresa = thirdInfo;
+                    break;
+                }
+                case _domain_enums_CatalogThirdInfoProfileEnum__WEBPACK_IMPORTED_MODULE_7__["CatalogThirdInfoProfileEnum"].CIUDAD__MUNICIPIO: {
+                    this.ciudadMunicipio = thirdInfo;
                     break;
                 }
             }
@@ -711,6 +779,38 @@ var CatalogThirdInfoProfileEnum;
 
 /***/ }),
 
+/***/ "./src/domain/models/profile/branch.model.ts":
+/*!***************************************************!*\
+  !*** ./src/domain/models/profile/branch.model.ts ***!
+  \***************************************************/
+/*! exports provided: Branch */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Branch", function() { return Branch; });
+class Branch {
+}
+
+
+/***/ }),
+
+/***/ "./src/domain/models/profile/branchinfo.model.ts":
+/*!*******************************************************!*\
+  !*** ./src/domain/models/profile/branchinfo.model.ts ***!
+  \*******************************************************/
+/*! exports provided: BranchInfo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BranchInfo", function() { return BranchInfo; });
+class BranchInfo {
+}
+
+
+/***/ }),
+
 /***/ "./src/domain/models/profile/profilerequest.model.ts":
 /*!***********************************************************!*\
   !*** ./src/domain/models/profile/profilerequest.model.ts ***!
@@ -722,6 +822,38 @@ var CatalogThirdInfoProfileEnum;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileRequest", function() { return ProfileRequest; });
 class ProfileRequest {
+}
+
+
+/***/ }),
+
+/***/ "./src/domain/models/profile/service.model.ts":
+/*!****************************************************!*\
+  !*** ./src/domain/models/profile/service.model.ts ***!
+  \****************************************************/
+/*! exports provided: Service */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Service", function() { return Service; });
+class Service {
+}
+
+
+/***/ }),
+
+/***/ "./src/domain/models/profile/serviceinfo.model.ts":
+/*!********************************************************!*\
+  !*** ./src/domain/models/profile/serviceinfo.model.ts ***!
+  \********************************************************/
+/*! exports provided: ServiceInfo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServiceInfo", function() { return ServiceInfo; });
+class ServiceInfo {
 }
 
 
