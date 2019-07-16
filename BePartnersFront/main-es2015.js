@@ -82,7 +82,7 @@ module.exports = "<footer class=\"footer\">\r\n  <div class=\"container\">\r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<nav id=\"navbar1\" class=\"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark\">\r\n  <div class=\"container\">\r\n      <a id=\"imgLogoReducido\" class=\"navbar-brand logo text-uppercase\" routerLink=\"/\">\r\n        <img src=\"../../../../assets/LogoReducidoMenu.png\" >  \r\n      </a>\r\n      <button id=\"menu_button\" class=\"navbar-toggler\" (click)=\"toggleMenu()\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <i class=\"mdi mdi-menu\"></i>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\" scrollSpy>\r\n          <ul class=\"navbar-nav navbar-center\" id=\"mySidenav\">\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_home\"  [ngx-scroll-to]=\"'#home'\" class=\"nav-link\" >PRESTACLIC</a>\r\n              </li>\r\n              <li class=\"nav-item\"  >\r\n                  <a data=\"id_services\"  [ngx-scroll-to]=\"'#services'\" class=\"nav-link\" >PLANES</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_features\"  [ngx-scroll-to]=\"'#features'\"  class=\"nav-link\" >NOSOTROS</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_pricing\" [ngx-scroll-to]=\"'#pricing'\" class=\"nav-link\">AYUDA</a>\r\n              </li>\r\n             \r\n            \r\n          </ul>\r\n          <div class=\"nav-button ml-auto\">\r\n              <ul class=\"nav navbar-nav navbar-right\">\r\n                  <li>         \r\n\r\n                      <button  (click)=\"openRegisterComponent()\" type=\"button\" class=\"btn btn-second  btn-rounded\">REGISTRATE</button>\r\n                      <button (click)=\"openLogIn()\" type=\"button\" class=\"btn btn-custom  btn-rounded\">INICIAR SESIÓN</button>\r\n\r\n                    </li>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</nav>\r\n<br>\r\n<br>\r\n<br>"
+module.exports = "\r\n<nav id=\"navbar1\" class=\"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark\">\r\n  <div class=\"container container-Head\">\r\n      <a id=\"imgLogoReducido\" class=\"navbar-brand logo text-uppercase\" routerLink=\"/\">\r\n        <img src=\"../../../../assets/LogoReducidoMenu.png\" >  \r\n      </a>\r\n      <button id=\"menu_button\" class=\"navbar-toggler\" (click)=\"toggleMenu()\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <i class=\"mdi mdi-menu\"></i>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\" scrollSpy>\r\n          <ul class=\"navbar-nav navbar-center mediaMenuUl\" id=\"mySidenav\">\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_home\"  [ngx-scroll-to]=\"'#home'\" class=\"nav-link\" >PRESTACLIC</a>\r\n              </li>\r\n              <li class=\"nav-item\"  >\r\n                  <a data=\"id_services\"  [ngx-scroll-to]=\"'#services'\" class=\"nav-link\" >PLANES</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_features\"  [ngx-scroll-to]=\"'#features'\"  class=\"nav-link\" >NOSOTROS</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_pricing\" [ngx-scroll-to]=\"'#pricing'\" class=\"nav-link\">AYUDA</a>\r\n              </li>\r\n             \r\n            \r\n          </ul>\r\n          <div class=\"nav-button ml-auto\">\r\n              <ul class=\"nav navbar-nav navbar-right\">\r\n                  <li>         \r\n\r\n                      <button  (click)=\"openRegisterComponent()\" type=\"button\" class=\"btn btn-second  btn-rounded\">REGISTRATE</button>\r\n                      <button (click)=\"openLogIn()\" type=\"button\" class=\"btn btn-custom  btn-rounded\">INICIAR SESIÓN</button>\r\n\r\n                    </li>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</nav>\r\n<br>\r\n<br>\r\n<br>\r\n<br>"
 
 /***/ }),
 
@@ -104,7 +104,7 @@ module.exports = "<div id=\"theme_id\" class=\"\">\r\n    <app-header></app-head
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"footer\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-4 margin-t-20\">\r\n              <h2 class=\"title-Footer\" style=\"text-align: center;font-size: 18px\">BePartners es un producto</h2>\r\n              <img class=\"icon-footer\" src=\"../../../../assets/LogoDataCredito.png\" >  \r\n\r\n          </div>\r\n          <div class=\"col-lg-4 margin-t-20\">\r\n                <h2 class=\"title-Footer\" style=\"text-align: center;font-size: 18px;margin-top: 58px;\">Contactate con nuestra Comunidad</h2>\r\n\r\n          </div>\r\n          <div class=\"col-lg-4 margin-t-20\">\r\n              <h2 class=\"title-Footer\">Otros de nuestros sitios</h2>\r\n              <h2 class=\"link-Footer\">www.datacredito.com</h2>\r\n              <h2 class=\"link-Footer\">www.midatacredito.com</h2>\r\n           \r\n              <form class=\"form subscribe\">\r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/Instagram.svg\" >  \r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/Youtube.svg\" >  \r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/003-twitter.svg\" >  \r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\" >  \r\n                 \r\n              </form>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"container\">\r\n        <div class=\"row\">\r\n                <div class=\"col-md-12\">\r\n                <h4>Consulta la politica de tratamiento de datos personales de DataCredito Experian haciendo clic aqui</h4>\r\n                 <hr>\r\n                 <h4>A�o 2019 Datacredito Experian, All rights reserved</h4>\r\n\r\n               </div>\r\n        </div>\r\n     </div>\r\n</footer>\r\n\r\n\r\n"
+module.exports = "<footer class=\"footer\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-4 margin-t-20\">\r\n              <h2 class=\"title-Footer\" style=\"text-align: center;font-size: 18px\">BePartners es un producto</h2>\r\n              <img class=\"icon-footer\" src=\"../../../../assets/LogoDataCredito.png\" >  \r\n\r\n          </div>\r\n          <div class=\"col-lg-4 margin-t-20\">\r\n                <h2 class=\"title-Footer\" style=\"text-align: center;font-size: 18px;margin-top: 58px;\">Contactate con nuestra Comunidad</h2>\r\n\r\n          </div>\r\n          <div class=\"col-lg-4 margin-t-20\">\r\n              <h2 class=\"title-Footer\">Otros de nuestros sitios</h2>\r\n              <h2 class=\"link-Footer\">www.datacredito.com</h2>\r\n              <h2 class=\"link-Footer\">www.midatacredito.com</h2>\r\n           \r\n              <form class=\"form subscribe\">\r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/Instagram.svg\" >  \r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/Youtube.svg\" >  \r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/003-twitter.svg\" >  \r\n                    <img class=\"icon-footer\" src=\"../../../../assets/Iconos/Facebook.svg\" >  \r\n                 \r\n              </form>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"container\">\r\n        <div class=\"row\">\r\n                <div class=\"col-md-12\">\r\n                <h4>Consulta la politica de tratamiento de datos personales de DataCredito Experian haciendo clic aqui</h4>\r\n                 <hr>\r\n                 <h4>©2019 DataCrédito Experian, All rights reserved</h4>\r\n\r\n               </div>\r\n        </div>\r\n     </div>\r\n</footer>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -115,7 +115,7 @@ module.exports = "<footer class=\"footer\">\r\n  <div class=\"container\">\r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<nav id=\"navbar1\" class=\"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark\">\r\n  <div class=\"container\">\r\n      <a id=\"imgLogoReducido\" class=\"navbar-brand logo text-uppercase\" routerLink=\"/\">\r\n        <img src=\"../../../../assets/LogoReducidoMenu.png\" >  \r\n        \r\n      </a>\r\n      <button id=\"menu_button\" class=\"navbar-toggler\" (click)=\"toggleMenu()\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <i class=\"mdi mdi-menu\"></i>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\" scrollSpy>\r\n          <ul class=\"navbar-nav navbar-center\" id=\"mySidenav\">\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_migestor\"  [ngx-scroll-to]=\"'#id_migestor'\" class=\"nav-link\" >Mi GESTOR</a>\r\n              </li>\r\n              <li class=\"nav-item\"  >\r\n                  <a data=\"id_prestaclic\"  [ngx-scroll-to]=\"'#id_prestaclic'\" class=\"nav-link\" >PRESTACLIC</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_ayuda\"  [ngx-scroll-to]=\"'#id_ayuda'\"  class=\"nav-link\" >AYUDA</a>\r\n              </li>\r\n                          \r\n            \r\n          </ul>\r\n          <div class=\"nav-button ml-auto\">\r\n              <ul class=\"nav navbar-nav navbar-right\">\r\n                  <li>\r\n                      <button  (click)=\"openProfileComponent()\" type=\"button\" class=\"btn btn-second  btn-rounded\">REGISTRO</button>\r\n                      <button type=\"button\" class=\"btn btn-custom  btn-rounded\">MY COMPANY</button>\r\n                    </li>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</nav>\r\n<br>\r\n<br>\r\n<br>"
+module.exports = "\r\n<nav id=\"navbar1\" class=\"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark\">\r\n  <div class=\"container\">\r\n      <a id=\"imgLogoReducido\" class=\"navbar-brand logo text-uppercase\" routerLink=\"/\">\r\n        <img id=\"logo\" src=\"../../../../assets/LogoReducidoMenu.png\" >  \r\n        \r\n      </a>\r\n      <button id=\"menu_button\" class=\"navbar-toggler\" (click)=\"toggleMenu()\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <i class=\"mdi mdi-menu\"></i>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\" scrollSpy>\r\n          <ul class=\"navbar-nav navbar-center\" id=\"mySidenav\">\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_migestor\"  [ngx-scroll-to]=\"'#id_migestor'\" class=\"nav-link\" >Mi GESTOR</a>\r\n              </li>\r\n              <li class=\"nav-item\"  >\r\n                  <a data=\"id_prestaclic\"  [ngx-scroll-to]=\"'#id_prestaclic'\" class=\"nav-link\" >PRESTACLIC</a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                  <a data=\"id_ayuda\"  [ngx-scroll-to]=\"'#id_ayuda'\"  class=\"nav-link\" >AYUDA</a>\r\n              </li>\r\n                          \r\n            \r\n          </ul>\r\n          <div class=\"nav-button ml-auto\">\r\n              <ul class=\"nav navbar-nav navbar-right\">\r\n                  <li>\r\n                      <button  type=\"button\" class=\"btn btn-custom  btn-rounded\">Diego Acosta</button>\r\n                    </li>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</nav>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>"
 
 /***/ }),
 
@@ -274,6 +274,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm2015/menu.js");
 /* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm2015/sidenav.js");
 /* harmony import */ var _layoutsession_layoutsession_modele__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./layoutsession/layoutsession.modele */ "./src/client/app/layoutsession/layoutsession.modele.ts");
+/* harmony import */ var _services_Communication_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/Communication.service */ "./src/client/app/services/Communication.service.ts");
 
 
 
@@ -288,6 +289,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 //Start Material Design
+
 
 
 
@@ -325,7 +327,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HTTP_INTERCEPTORS"],
                 multi: true,
                 useClass: _services_interceptorHttp_service__WEBPACK_IMPORTED_MODULE_11__["InterceptorHttp"]
-            }],
+            }, _services_Communication_service__WEBPACK_IMPORTED_MODULE_19__["CommunicationService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })
 ], AppModule);
@@ -492,6 +494,7 @@ let HeaderComponent = class HeaderComponent {
     }
     openLogIn() {
         this.router.navigate(['profile/home']);
+        //	this.router.navigate(['profile/home/edit']);
     }
     toggleMenu() {
         document.getElementById('navbarCollapse').classList.toggle('show');
@@ -749,7 +752,7 @@ FooterSessionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "a\r\n{\r\n    cursor: pointer;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL2xheW91dHNlc3Npb24vaGVhZGVyL2hlYWRlcnNlc3Npb24uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxlQUFlO0FBQ25CIiwiZmlsZSI6InNyYy9jbGllbnQvYXBwL2xheW91dHNlc3Npb24vaGVhZGVyL2hlYWRlcnNlc3Npb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImFcclxue1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59Il19 */"
+module.exports = "a\r\n{\r\n    cursor: pointer;\r\n}\r\n.navbar-custom .navbar-nav li a\r\n{\r\n    cursor: pointer;\r\n    color: #3d3e3c !important;\r\n\topacity: 0.8;\r\n\tfont-weight: 700;\r\n}\r\n.navbar-custom #imgLogoReducido {\r\n    visibility: visible;\r\n}\r\n.navbar-nav {\r\n    padding-left: 125px;\r\n}\r\n#logo\r\n{\r\n    margin-left: -39px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jbGllbnQvYXBwL2xheW91dHNlc3Npb24vaGVhZGVyL2hlYWRlcnNlc3Npb24uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7O0lBRUksZUFBZTtJQUNmLHlCQUF5QjtDQUM1QixZQUFZO0NBQ1osZ0JBQWdCO0FBQ2pCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvY2xpZW50L2FwcC9sYXlvdXRzZXNzaW9uL2hlYWRlci9oZWFkZXJzZXNzaW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJhXHJcbntcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG4ubmF2YmFyLWN1c3RvbSAubmF2YmFyLW5hdiBsaSBhXHJcbntcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGNvbG9yOiAjM2QzZTNjICFpbXBvcnRhbnQ7XHJcblx0b3BhY2l0eTogMC44O1xyXG5cdGZvbnQtd2VpZ2h0OiA3MDA7XHJcbn1cclxuLm5hdmJhci1jdXN0b20gI2ltZ0xvZ29SZWR1Y2lkbyB7XHJcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xyXG59XHJcbi5uYXZiYXItbmF2IHtcclxuICAgIHBhZGRpbmctbGVmdDogMTI1cHg7XHJcbn1cclxuI2xvZ29cclxue1xyXG4gICAgbWFyZ2luLWxlZnQ6IC0zOXB4O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -767,17 +770,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var ngx_scrollspy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-scrollspy */ "./node_modules/ngx-scrollspy/ngx-scrollspy.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _domain_models_example_RootObject__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../domain/models/example/RootObject */ "./src/domain/models/example/RootObject.ts");
+/* harmony import */ var _services_example_example_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/example/example.provider */ "./src/client/app/services/example/example.provider.ts");
+/* harmony import */ var _services_Communication_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../services/Communication.service */ "./src/client/app/services/Communication.service.ts");
+
+
+
 
 
 
 
 let HeaderSessionComponent = class HeaderSessionComponent {
-    constructor(scrollSpyService, router) {
+    constructor(scrollSpyService, router, serviceExample, communication) {
         this.scrollSpyService = scrollSpyService;
         this.router = router;
+        this.serviceExample = serviceExample;
+        this.communication = communication;
         this.sections = {};
     }
+    mapUser(base) {
+        var t = null;
+        this.communication.updateTransaction(base);
+    }
     ngOnInit() {
+        var example = new _domain_models_example_RootObject__WEBPACK_IMPORTED_MODULE_4__["Example"]();
+        this.serviceExample.create(example).subscribe(user => this.mapUser(user));
         if (this.router.url == "/index4") {
             document.querySelector('a[data="id_migestor"]').setAttribute('style', 'color:#f85f89!important');
         }
@@ -786,8 +803,6 @@ let HeaderSessionComponent = class HeaderSessionComponent {
         }
         window.onscroll = function () { myFunction(); };
         var navbar1 = document.getElementById("navbar1");
-        var imgHome = document.getElementById("imgHome");
-        var imgLogoReducido = document.getElementById("imgLogoReducido");
         function myFunction() {
             if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
                 navbar1.style.backgroundColor = "white";
@@ -796,14 +811,6 @@ let HeaderSessionComponent = class HeaderSessionComponent {
             else {
                 navbar1.style.backgroundColor = "";
                 navbar1.style.padding = "20px";
-            }
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                imgHome.style.visibility = "hidden";
-                imgLogoReducido.style.visibility = "visible";
-            }
-            else {
-                imgHome.style.visibility = "visible";
-                imgLogoReducido.style.visibility = "hidden";
             }
         }
     }
@@ -866,7 +873,8 @@ HeaderSessionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: __webpack_require__(/*! raw-loader!./headersession.component.html */ "./node_modules/raw-loader/index.js!./src/client/app/layoutsession/header/headersession.component.html"),
         styles: [__webpack_require__(/*! ./headersession.component.css */ "./src/client/app/layoutsession/header/headersession.component.css")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [ngx_scrollspy__WEBPACK_IMPORTED_MODULE_2__["ScrollSpyService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_services_example_example_provider__WEBPACK_IMPORTED_MODULE_5__["ExampleToken"])),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [ngx_scrollspy__WEBPACK_IMPORTED_MODULE_2__["ScrollSpyService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], Object, _services_Communication_service__WEBPACK_IMPORTED_MODULE_6__["CommunicationService"]])
 ], HeaderSessionComponent);
 
 
@@ -973,6 +981,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @nicky-lenaers/ngx-scroll-to */ "./node_modules/@nicky-lenaers/ngx-scroll-to/fesm2015/nicky-lenaers-ngx-scroll-to.js");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
 /* harmony import */ var ngx_scrollspy__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-scrollspy */ "./node_modules/ngx-scrollspy/ngx-scrollspy.js");
+/* harmony import */ var _app_services_example_example_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../app/services/example/example.service */ "./src/client/app/services/example/example.service.ts");
+/* harmony import */ var _app_services_example_example_provider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../app/services/example/example.provider */ "./src/client/app/services/example/example.provider.ts");
+
+
 
 
 
@@ -988,6 +1000,10 @@ let LayoutSessionModule = class LayoutSessionModule {
 };
 LayoutSessionModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        providers: [
+            _app_services_example_example_service__WEBPACK_IMPORTED_MODULE_11__["ExampleService"],
+            new _app_services_example_example_provider__WEBPACK_IMPORTED_MODULE_12__["ExampleProvider"](),
+        ],
         declarations: [_header_headersession_component__WEBPACK_IMPORTED_MODULE_5__["HeaderSessionComponent"], _footer_footersession_component__WEBPACK_IMPORTED_MODULE_6__["FooterSessionComponent"], _layout_layoutsession_component__WEBPACK_IMPORTED_MODULE_7__["LayoutSessionComponent"]],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
@@ -1541,6 +1557,104 @@ RegisterModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/client/app/services/Communication.service.ts":
+/*!**********************************************************!*\
+  !*** ./src/client/app/services/Communication.service.ts ***!
+  \**********************************************************/
+/*! exports provided: CommunicationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommunicationService", function() { return CommunicationService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
+
+let CommunicationService = class CommunicationService {
+    constructor() {
+        this.sub_updateTransaction = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+        this.obs_updateTransaction = this.sub_updateTransaction.asObservable();
+    }
+    updateTransaction(transaction) {
+        this.sub_updateTransaction.next(transaction);
+    }
+};
+CommunicationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], CommunicationService);
+
+
+
+/***/ }),
+
+/***/ "./src/client/app/services/example/example.provider.ts":
+/*!*************************************************************!*\
+  !*** ./src/client/app/services/example/example.provider.ts ***!
+  \*************************************************************/
+/*! exports provided: ExampleToken, ExampleProvider */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExampleToken", function() { return ExampleToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExampleProvider", function() { return ExampleProvider; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _example_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../example/example.service */ "./src/client/app/services/example/example.service.ts");
+
+
+const ExampleToken = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('example.service');
+class ExampleProvider {
+    constructor() {
+        this.provide = ExampleToken;
+        this.deps = [_example_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]];
+        this.multi = false;
+        this.useFactory = (...deps) => {
+            return deps[0];
+        };
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/client/app/services/example/example.service.ts":
+/*!************************************************************!*\
+  !*** ./src/client/app/services/example/example.service.ts ***!
+  \************************************************************/
+/*! exports provided: ExampleService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExampleService", function() { return ExampleService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let ExampleService = class ExampleService {
+    constructor(http) {
+        this.http = http;
+    }
+    create(Example) {
+        var request = this.http.get(`https://jsonplaceholder.typicode.com/todos/1`);
+        return request;
+    }
+};
+ExampleService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+], ExampleService);
+
+
+
+/***/ }),
+
 /***/ "./src/client/app/services/interceptorHttp.service.ts":
 /*!************************************************************!*\
   !*** ./src/client/app/services/interceptorHttp.service.ts ***!
@@ -2052,6 +2166,22 @@ var Catalog;
     Catalog["ValueEstatusActividades"] = "109001";
     Catalog["ValueEstatusPsw"] = "109003";
 })(Catalog || (Catalog = {}));
+
+
+/***/ }),
+
+/***/ "./src/domain/models/example/RootObject.ts":
+/*!*************************************************!*\
+  !*** ./src/domain/models/example/RootObject.ts ***!
+  \*************************************************/
+/*! exports provided: Example */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Example", function() { return Example; });
+class Example {
+}
 
 
 /***/ }),
