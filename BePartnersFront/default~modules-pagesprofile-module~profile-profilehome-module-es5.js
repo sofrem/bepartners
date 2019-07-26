@@ -2083,12 +2083,12 @@ var FinantialService = /** @class */ (function () {
     }
     FinantialService.prototype.create = function (values) {
         //var request = this.http.post<RootObject>(`http://localhost:8081/servicebroker/v1/catalog/profile/finantial/`, values);		
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/", values);
         return request;
     };
     FinantialService.prototype.createList = function (values) {
         //var request = this.http.post<RootObject>(`http://localhost:8080/servicebroker/v1/catalog/profile/finantial/listinfo/`, values);	
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/listinfo/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/listinfo/", values);
         return request;
     };
     FinantialService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2162,12 +2162,12 @@ var PersonLinkedService = /** @class */ (function () {
         console.log('ANtes del envio');
         console.log(values);
         // var request = this.http.post<RootObject>(`http://localhost:8081/servicebroker/v1/catalog/profile/person/save/list/`, values);
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/save/list/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/save/list/", values);
         return request;
     };
     PersonLinkedService.prototype.createList = function (values) {
         // var request = this.http.post<RootObject>(`http://localhost:8080/servicebroker/v1/catalog/profile/person/listoinfo/`, values);	
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/listoinfo/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/listoinfo/", values);
         return request;
     };
     PersonLinkedService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2238,7 +2238,7 @@ var ProfileBasicService = /** @class */ (function () {
         this.http = http;
     }
     ProfileBasicService.prototype.sendRequest = function (values) {
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileBasic/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileBasic/", values);
         return request;
     };
     ProfileBasicService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2309,7 +2309,7 @@ var ProfileBasicUpSertService = /** @class */ (function () {
         this.http = http;
     }
     ProfileBasicUpSertService.prototype.create = function (values) {
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileBasic/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileBasic/", values);
         return request;
     };
     ProfileBasicUpSertService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2380,7 +2380,7 @@ var ProfileSpesificService = /** @class */ (function () {
         this.http = http;
     }
     ProfileSpesificService.prototype.sendRequest = function (values) {
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileEspecific/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileEspecific/", values);
         return request;
     };
     ProfileSpesificService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -2451,7 +2451,7 @@ var ProfileSpesificUpSertService = /** @class */ (function () {
         this.http = http;
     }
     ProfileSpesificUpSertService.prototype.create = function (values) {
-        var request = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileEspecific/", values);
+        var request = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileEspecific/", values);
         return request;
     };
     ProfileSpesificUpSertService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

@@ -2037,12 +2037,12 @@ let FinantialService = class FinantialService {
     }
     create(values) {
         //var request = this.http.post<RootObject>(`http://localhost:8081/servicebroker/v1/catalog/profile/finantial/`, values);		
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/`, values);
         return request;
     }
     createList(values) {
         //var request = this.http.post<RootObject>(`http://localhost:8080/servicebroker/v1/catalog/profile/finantial/listinfo/`, values);	
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/listinfo/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/finantial/listinfo/`, values);
         return request;
     }
 };
@@ -2109,12 +2109,12 @@ let PersonLinkedService = class PersonLinkedService {
         console.log('ANtes del envio');
         console.log(values);
         // var request = this.http.post<RootObject>(`http://localhost:8081/servicebroker/v1/catalog/profile/person/save/list/`, values);
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/save/list/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/save/list/`, values);
         return request;
     }
     createList(values) {
         // var request = this.http.post<RootObject>(`http://localhost:8080/servicebroker/v1/catalog/profile/person/listoinfo/`, values);	
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/listoinfo/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/person/listoinfo/`, values);
         return request;
     }
 };
@@ -2178,7 +2178,7 @@ let ProfileBasicService = class ProfileBasicService {
         this.http = http;
     }
     sendRequest(values) {
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileBasic/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileBasic/`, values);
         return request;
     }
 };
@@ -2242,7 +2242,7 @@ let ProfileBasicUpSertService = class ProfileBasicUpSertService {
         this.http = http;
     }
     create(values) {
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileBasic/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileBasic/`, values);
         return request;
     }
 };
@@ -2306,7 +2306,7 @@ let ProfileSpesificService = class ProfileSpesificService {
         this.http = http;
     }
     sendRequest(values) {
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileEspecific/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/profileEspecific/`, values);
         return request;
     }
 };
@@ -2370,7 +2370,7 @@ let ProfileSpesificUpSertService = class ProfileSpesificUpSertService {
         this.http = http;
     }
     create(values) {
-        var request = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileEspecific/`, values);
+        var request = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/catalog/profile/upsertProfileEspecific/`, values);
         return request;
     }
 };

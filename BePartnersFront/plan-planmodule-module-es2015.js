@@ -471,7 +471,7 @@ let CuponRequestService = class CuponRequestService {
         this.http = http;
     }
     create(values) {
-        var response = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/cupon/`, values);
+        var response = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/cupon/`, values);
         return response;
     }
 };
@@ -536,7 +536,7 @@ let PayPlanService = class PayPlanService {
         this.http = http;
     }
     create(values) {
-        var response = this.http.post(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/payplan/`, values);
+        var response = this.http.post(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/payplan/`, values);
         return response;
     }
 };
@@ -600,7 +600,7 @@ let PcPlansService = class PcPlansService {
         this.http = http;
     }
     create(values) {
-        var response = this.http.get(`https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/plans/`);
+        var response = this.http.get(`http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/plans/`);
         return response;
     }
 };

@@ -489,7 +489,7 @@ var CuponRequestService = /** @class */ (function () {
         this.http = http;
     }
     CuponRequestService.prototype.create = function (values) {
-        var response = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/cupon/", values);
+        var response = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/cupon/", values);
         return response;
     };
     CuponRequestService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -561,7 +561,7 @@ var PayPlanService = /** @class */ (function () {
         this.http = http;
     }
     PayPlanService.prototype.create = function (values) {
-        var response = this.http.post("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/payplan/", values);
+        var response = this.http.post("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/payplan/", values);
         return response;
     };
     PayPlanService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -632,7 +632,7 @@ var PcPlansService = /** @class */ (function () {
         this.http = http;
     }
     PcPlansService.prototype.create = function (values) {
-        var response = this.http.get("https://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/plans/");
+        var response = this.http.get("http://default-bepartners-dev.apps.appcanvas.net/servicebroker/v1/plans/pc/plans/");
         return response;
     };
     PcPlansService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
