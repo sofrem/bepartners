@@ -1,0 +1,46 @@
+{
+  "login": {
+    "titles": {
+      "first": "Sso -",
+      "second": "Experian",
+      "welcome": "Welcome Partner",
+      "register": "Register",
+      "dontAccount": "You don't have a BePartners account yet?",
+      "spanish": "Sp",
+      "english": "En"
+    },
+    "fields": {
+      "user": "Username",
+      "pass": "Password",
+      "errors": {
+        "user": "Username Required",
+        "pass": "Password Required"
+      }
+    },
+    "buttoms": {
+      "singin": "Sing in",
+      "cancel": "Cancel",
+      "rememberme": "Remember Me"
+    },
+    "labels": {
+      "forgotpass": "Forgot Pass?",
+      "ingles": "English",
+      "espanol": "Spanish"
+    }
+  },
+  "footer": {
+    "titles": "©2019 DataCrédito Experian, All rights reserved",
+    "links": {
+      "legal": "LEGAL",
+      "privacidad": "PRIVACIDAD",
+      "copyright": "COPYRIGHT",
+      "cookies": "COOKIES"
+    }
+  },
+  "errors": {
+    "generics": {
+      "server": "The service is not available",
+      "userOrPass": "Invalid Username or Password."
+    }
+  }
+}

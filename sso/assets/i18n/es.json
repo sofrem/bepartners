@@ -1,0 +1,46 @@
+{
+  "login": {
+    "titles": {
+      "first": "Sso -",
+      "second": "Experian",
+      "welcome": "Bienvenido Partner",
+      "register": "Registrate",
+      "dontAccount": "¿Todavia no tienes una cuenta BePartners?",
+      "spanish": "Es",
+      "english": "En"
+    },
+    "fields": {
+      "user": "Usuario",
+      "pass": "Clave",
+      "errors": {
+        "user": "Nombre de Usuario requerido.",
+        "pass": "Clave de Usuario requerida."
+      }
+    },
+    "buttoms": {
+      "singin": "Iniciar Sesion",
+      "cancel": "Cancelar",
+      "rememberme": "Recuerdame"
+    },
+    "labels": {
+      "forgotpass": "Olvidastes tu contraseña?",
+      "ingles": "Ingles",
+      "espanol": "Español"
+    }
+  },
+  "footer": {
+    "titles": "©2019 DataCrédito Experian, All rights reserved",
+    "links": {
+      "legal": "LEGAL",
+      "privacidad": "PRIVACIDAD",
+      "copyright": "COPYRIGHT",
+      "cookies": "COOKIES"
+    }
+  },
+  "errors": {
+    "generics": {
+      "server": "El servicio no esta disponible.",
+      "userOrPass": "Usuario o Clave invalida."
+    }
+  }
+}
