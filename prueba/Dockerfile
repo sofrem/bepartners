@@ -1,7 +1,7 @@
 FROM nginx:latest
 #ARG PROXY=http://10.96.215.26:3128
 #RUN export http_proxy=$PROXY && apk update && apk upgrade && apk add nginx-mod-http-headers-more
-RUN semanage permissive -a httpd_t
+RUN semanage port -a -t http_port_t -p tcp 80
 ## Copy our default nginx config
 #COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY nginx/nginx.conf /etc/opt/rh/rh-nginx112/nginx/nginx.conf
