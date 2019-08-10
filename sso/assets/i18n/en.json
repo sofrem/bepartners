@@ -20,12 +20,19 @@
     "buttoms": {
       "singin": "Sing in",
       "cancel": "Cancel",
-      "rememberme": "Remember Me"
+      "rememberme": "Remember Me",
+      "accept": "Accept"
     },
     "labels": {
       "forgotpass": "Forgot Pass?",
       "ingles": "English",
       "espanol": "Spanish"
+    }
+  },
+  "activeUser": {
+    "titles": {
+      "userActive": "Your user has been successfully activated.",
+      "userError": "Your user has been active."
     }
   },
   "footer": {

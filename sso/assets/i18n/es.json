@@ -20,12 +20,19 @@
     "buttoms": {
       "singin": "Iniciar Sesion",
       "cancel": "Cancelar",
-      "rememberme": "Recuerdame"
+      "rememberme": "Recuerdame",
+      "accept": "Aceptar"
     },
     "labels": {
       "forgotpass": "Olvidastes tu contraseña?",
       "ingles": "Ingles",
       "espanol": "Español"
+    }
+  },
+  "activeUser": {
+    "titles": {
+      "userActive": "Tu usuario ha sido activado con exito.",
+      "userError": "El usuario ya se encuentra activo."
     }
   },
   "footer": {
