@@ -1,4 +1,10 @@
 {
+  "buttoms": {
+    "singin": "Iniciar Sesion",
+    "cancel": "Cancelar",
+    "rememberme": "Recuerdame",
+    "accept": "Aceptar"
+  },
   "login": {
     "titles": {
       "first": "Sso -",
@@ -35,6 +41,15 @@
       "userError": "El usuario ya se encuentra activo."
     }
   },
+  "forgetPass": {
+    "titles": {
+      "welcome": "Ingrese sus datos para cambiar su contraseña.",
+      "sendEmail": "Verifica tu email y sigue los pasos para cambiar tu contraseña."
+    },
+    "fileds": {
+      "email": "Ingresa tu email."
+    }
+  },
   "footer": {
     "titles": "©2019 DataCrédito Experian, All rights reserved",
     "links": {
@@ -47,7 +62,9 @@
   "errors": {
     "generics": {
       "server": "El servicio no esta disponible.",
-      "userOrPass": "Usuario o Clave invalida."
+      "userOrPass": "Usuario o Clave invalida.",
+      "requerid": "Campo requerido.",
+      "emailFormat": "Email incorrecto."
     }
   }
 }

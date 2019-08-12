@@ -1,4 +1,10 @@
 {
+  "buttoms": {
+    "singin": "Sing in",
+    "cancel": "Cancel",
+    "rememberme": "Remember Me",
+    "accept": "Accept"
+  },
   "login": {
     "titles": {
       "first": "Sso -",
@@ -35,6 +41,15 @@
       "userError": "Your user has been active."
     }
   },
+  "forgetPass": {
+    "titles": {
+      "welcome": "Enter your information to change your password.",
+      "sendEmail": "Verify your email and follow de step for change password."
+    },
+    "fileds": {
+      "email": "Put your email."
+    }
+  },
   "footer": {
     "titles": "©2019 DataCrédito Experian, All rights reserved",
     "links": {
@@ -47,7 +62,9 @@
   "errors": {
     "generics": {
       "server": "The service is not available",
-      "userOrPass": "Invalid Username or Password."
+      "userOrPass": "Invalid Username or Password.",
+      "requerid": "Input requerid.",
+      "emailFormat": "Format Email Wrong."
     }
   }
 }
