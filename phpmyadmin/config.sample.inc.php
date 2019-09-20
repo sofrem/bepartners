@@ -37,10 +37,10 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
  */
 
 /* User used to manipulate with storage */
-// $cfg['Servers'][$i]['controlhost'] = '';
-// $cfg['Servers'][$i]['controlport'] = '';
-// $cfg['Servers'][$i]['controluser'] = 'root';
-// $cfg['Servers'][$i]['controlpass'] = 'bepartners';
+$cfg['Servers'][$i]['controlhost'] = 'db-mysql5.qa-co-sla-bepartners.svc.cluster.local';
+$cfg['Servers'][$i]['controlport'] = '3306';
+$cfg['Servers'][$i]['controluser'] = 'root';
+$cfg['Servers'][$i]['controlpass'] = 'bepartners';
 
 /* Storage database and tables */
 // $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
